@@ -2,16 +2,15 @@
   "name": "wizards-code",
   "version": "1.0.0",
   "description": "## Description",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TravisSwift/wizards-code.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,6 +18,16 @@
   },
   "homepage": "https://github.com/TravisSwift/wizards-code#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.2",
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
   }
 }

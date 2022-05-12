@@ -1,42 +1,15 @@
-const express = require('express');
-const PORT = process.env.PORT || 3001;
+const express = require("express");
+// const routes = require("./routes");
+const sequelize = require("./config/connection");
+
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-router = require('express').Router();
-// const { User } = require('../../models');
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// const { characters } = require('./data/charcters');
+// app.use(routes);
 
-// GET /api/characters
-router.get('/', (req, res) => {});
-
-app.get('/api/characters/:id', (req, res) => {
-    const result = findById(req.params.id, characters);
-    if (result) {
-      res.json(result);
-    } else {
-      res.send(404);
-    }
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
   });
-
-  app.post('/api/characters', (req, res) => {});
-  // req.body is where our incoming content will be
-  console.log(req.body);
-  res.json(req.body);
-
-
-// POST /api/characters
-router.post('/', (req, res) => {});
-
-// DELETE /api/characters
-router.delete('/:id', (req, res) => {});
-
-app.get('/api/characters', (req, res) => {
-});
-
-app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}!`);
-  });
-
-
-  module.exports = router;
