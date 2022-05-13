@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User } = require("../../models");
+const { User, Character } = require("../../models");
 
 router.get("/", (req, res) => {
     User.findAll({
@@ -20,17 +20,15 @@ router.get("/:id", (req, res) => {
         },
         include: [
             {
-                // other models related to user go here
-                
-            },
-            {
-              
+                // other models related to user
+                model: Character,
+                attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"]    
             },
         ]
     })
         .then(dbUserData => {
             if (!dbUserData) {
-                res.status(404).json({ messgae: "No user found with this id" });
+                res.status(404).json({ message: "No user found with this id" });
                 return;
             }
             res.json(dbUserData);
@@ -41,6 +39,7 @@ router.get("/:id", (req, res) => {
         });
 });
 
+// creating a new user
 router.post("/", (req, res) => {
     User.create({
         username: req.body.username,

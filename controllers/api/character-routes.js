@@ -1,9 +1,17 @@
 const router = require("express").Router();
-const { Character } = require("../../models");
+const { User, Character } = require("../../models");
 
 router.get("/", (req, res) => {
     Character.findAll({
-        attributes: { exclude: ["password"] }
+        attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"],
+        order: [["created_at", "DESC"]],
+        include: [
+            {
+                model: User,
+                attributes: ["username"]
+
+            }
+        ]
     })
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
@@ -13,24 +21,21 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-    User.findOne({
-        attributes: { exclude: ["password"] },
+    Character.findOne({
         where: {
             id: req.params.id
         },
+        attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"],
         include: [
             {
-                // other models related to user go here
-                
-            },
-            {
-              
-            },
+                model: User,
+                attributes: ["username"]
+            }
         ]
     })
         .then(dbUserData => {
             if (!dbUserData) {
-                res.status(404).json({ messgae: "No user found with this id" });
+                res.status(404).json({ messgae: "No character found with this id" });
                 return;
             }
             res.json(dbUserData);
@@ -42,40 +47,27 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-    User.create({
-        username: req.body.username,
-        email: req.body.email,
-        password: req.body.password
+    Character.create({
+        strength: req.body.strength,
+        dexterity: req.body.dexterity,
+        constitution: req.body.constitution,
+        intelligence: req.body.intelligence,
+        wisdom: req.body.wisdom,
+        charisma: req.body.charisma,
+        class: req.body.class, 
+        name: req.body.name,
+        str: req.body.str,
+        dex: req.body.dex,
+        con: req.body.con,
+        int: req.body.int,
+        wis: req.body.wis,
+        cha: req.body.cha
     })
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
         });
-});
-
-router.post("/login", (req, res) => {
-    // queried the user table for the user's email
-    User.findOne({
-        where: {
-            email: req.body.email
-        }
-    }).then(dbUserData => {
-        // if email not found, throw an error
-        if (!dbUserData) {
-            res.status(400).json({ message: "No user with that email address!" });
-            return;
-        }
-
-        const validPassword = dbUserData.checkPassword(req.body.password);
-
-        // if password is incorrect, throw error
-        if (!validPassword) {
-            res.status(400).json({ message: "Incorrect password" });
-            return;
-        }
-        res.json({ user: dbUserData, message: "You are now logged in!" });
-    });
 });
 
 module.exports = router;
