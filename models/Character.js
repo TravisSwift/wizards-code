@@ -72,6 +72,9 @@ Character.init(
         alignment: {
             type: DataTypes.STRING
         },
+        level: {
+            type: DataTypes.INTEGER
+        },
         str: {
             type: DataTypes.INTEGER
         },
