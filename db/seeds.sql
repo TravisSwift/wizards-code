@@ -27,3 +27,12 @@ VALUES
     ('Erik', 10),
     ('Alex', 11),
     ('David', 12);
+
+    INSERT INTO stats (stat_name, stat_value, character_id)
+    VALUES
+        ('Strength', 15, 1),
+        ('Dexterity', 15, 1),
+        ('Constitution', 15, 1),
+        ('Intelligence', 12, 1),
+        ('Charisma', 10, 1),
+        ('Wisdom', 8, 1);
