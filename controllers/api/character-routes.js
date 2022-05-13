@@ -4,7 +4,6 @@ const { User, Character } = require("../../models");
 router.get("/", (req, res) => {
     Character.findAll({
         attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"],
-        order: [["created_at", "DESC"]],
         include: [
             {
                 model: User,
@@ -48,6 +47,7 @@ router.get("/:id", (req, res) => {
 
 router.post("/", (req, res) => {
     Character.create({
+        user_id: req.body.user_id,
         strength: req.body.strength,
         dexterity: req.body.dexterity,
         constitution: req.body.constitution,
