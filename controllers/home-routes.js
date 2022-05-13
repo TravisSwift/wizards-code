@@ -1,16 +1,16 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection");
-// const { Post, User, Comment } = require("../models");
+const { User, Character } = require("../models");
 
 // rendering the homepage handlebar
 router.get("/", (req, res) => {
     Post.findAll({
-        // finding all posts
+        // finding all characters
         attributes: ["id", "post_url", "title", "created_at"],
         include: [
             {
-                model: Comment,
-                attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
+                model: Character,
+                attributes: ["id", "user_id"],
                 include: {
                     model: User,
                     attributes: ["username"]
