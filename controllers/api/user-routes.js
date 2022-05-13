@@ -22,7 +22,7 @@ router.get("/:id", (req, res) => {
             {
                 // other models related to user
                 model: Character,
-                attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"]    
+                attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"]
             },
         ]
     })
@@ -77,14 +77,14 @@ router.post("/login", (req, res) => {
     });
 });
 
-router.post("/logout", (req,res) => {
-    if (req.session.loggedIn) {
-        req.session.destroy(() => {
-            res.status(204).end();
-        });
-    } else {
-        res.status(404).end();
-    }
-});
+// router.post("/logout", (req, res) => {
+//     if (req.session.loggedIn) {
+//         req.session.destroy(() => {
+//             res.status(204).end();
+//         });
+//     } else {
+//         res.status(404).end();
+//     }
+// });
 
 module.exports = router;

@@ -8,11 +8,10 @@ router.get("/", (req, res) => {
             {
                 model: User,
                 attributes: ["username"]
-
             }
         ]
     })
-        .then(dbUserData => res.json(dbUserData))
+        .then(dbCharacterData => res.json(dbCharacterData))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
@@ -32,12 +31,12 @@ router.get("/:id", (req, res) => {
             }
         ]
     })
-        .then(dbUserData => {
-            if (!dbUserData) {
+        .then(dbCharacterData => {
+            if (!dbCharacterData) {
                 res.status(404).json({ messgae: "No character found with this id" });
                 return;
             }
-            res.json(dbUserData);
+            res.json(dbCharacterData);
         })
         .catch(err => {
             console.log(err);
@@ -54,7 +53,7 @@ router.post("/", (req, res) => {
         intelligence: req.body.intelligence,
         wisdom: req.body.wisdom,
         charisma: req.body.charisma,
-        class: req.body.class, 
+        class: req.body.class,
         name: req.body.name,
         str: req.body.str,
         dex: req.body.dex,
@@ -63,11 +62,54 @@ router.post("/", (req, res) => {
         wis: req.body.wis,
         cha: req.body.cha
     })
-        .then(dbUserData => res.json(dbUserData))
+        .then(dbCharacterData => res.json(dbCharacterData))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
         });
+});
+
+router.put("/:id", (req, res) => {
+    Character.update(
+        {
+            
+        },
+        {
+            where: {
+                id: req.params.id
+            }
+        }
+    )
+    .then(dbCharacterData => {
+        if (!dbCharacterData) {
+            res.status(404).json({ message: "No character found with this id" });
+            return;
+        }
+        res.json(dbCharacterData);
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.delete("/:id", (req, res) => {
+    Character.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(dbCharacterData => {
+        if (!dbCharacterData) {
+            res.status(404).json({ messgae: "No character found with this id "});
+            return;
+        }
+        res.json(dbCharacterData);
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 module.exports = router;

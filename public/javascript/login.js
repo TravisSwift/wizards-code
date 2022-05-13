@@ -14,12 +14,12 @@ async function loginForm(event) {
                 password
             }),
             headers: { "Content-Type": "application/json" }
-         });
-         if (response.ok) {
-             document.location.replace("/");
-         } else {
-             alert(response.statusText);
-         }
+        });
+        if (response.ok) {
+            document.location.replace("/");
+        } else {
+            alert(response.statusText);
+        }
     }
 }
 
@@ -42,12 +42,12 @@ async function signupForm(event) {
                 password
             }),
             headers: { "Content-Type": "application/json" }
-         });
-         if (response.ok) {
-             document.location.replace("/");
-         } else {
-             alert(response.statusText);
-         }
+        });
+        if (response.ok) {
+            document.location.replace("/");
+        } else {
+            alert(response.statusText);
+        }
     }
 }
 
