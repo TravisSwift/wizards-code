@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "build-css": "tailwindcss build src/styles.css -o assets/css/styles.css"
+    "build-css": "tailwind build src/styles.css -o public/css/styles.css",
+    "live": "nodemon server.js" 
   },
   "repository": {
     "type": "git",
