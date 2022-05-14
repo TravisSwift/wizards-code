@@ -10,6 +10,7 @@ router.get("/", (req, res) => {
         attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"],
         include: [
             {
+
                 model: User,
                 attributes: ["username"]
             }
