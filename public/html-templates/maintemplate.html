@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons and Dragons Character Generator</title>
+    <link href="/public/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Title-->
+    <header>
+        <h1 class="text-3xl font-bold underline">Dungeons and Dragons Character Generator</h1>
+    </header>
+
+    <!--Navigation Bar-->
+    <nav>
+        <div class="">
+            <div>
+                <a>Learn More</a>
+            </div>
+
+            <div>
+                <a>Character Sheet Generator</a>
+            </div>
+
+            <div>
+                <button>Sign Up</button>
+            </div>
+
+            <div>
+                <button>Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!--Splash Page-->
+    <section>
+        <div>
+            <img src="/public/img/dnd-banner.jpg" alt="traveler on a horse entering the castle gates">
+        </div>
+
+        <!--How it works section/maybe some instructions-->
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facilis a molestias eligendi voluptas. Veritatis hic quasi quis, ratione atque rem illo voluptates aliquid, sunt dolores at dolor praesentium adipisci.</p>
+        </div>
+    </section>
+
+    <!--Character Creation-->
+    <!--This whole section will be a partial to check if user is logged in on whether to display or not-->
+    <content>
+        <!--Generator Buttons-->
+        <section>
+            <div>
+                <button>Roll a Character</button>
+            </div>
+
+            <div>
+                <button>Save Character</button>
+            </div>
+
+            <div>
+                <button>Load Character</button>
+            </div>
+
+        </section>
+
+        <!--Character Stats Section-->
+        <section>
+            <nav>
+
+                <!--Enter Character Name-->
+                <div>
+                    <label>Character Name</label><input type="text" name="character-name">
+                </div>
+
+                <!--Primary Class-->
+                <div>
+                    <select name="Primary Class">
+                        <option value="Warrior">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Cleric">Cleric</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Rogue">Rogue</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
+                        <option value="Wizard">Wizard</option>
+                        <option value="Artificer">Artificer</option>
+                        <option value="Blood-Hunter">Blood Hunter</option>
+                    </select>
+                </div>
+
+                <!--Secondary Class-->
+                <div>
+                    <select name="Secondary Class">
+                        <option value="Warrior">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Cleric">Cleric</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Rogue">Rogue</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
+                        <option value="Wizard">Wizard</option>
+                        <option value="Artificer">Artificer</option>
+                        <option value="Blood-Hunter">Blood Hunter</option>
+                    </select>
+                </div>
+
+                <!--Level-->
+                <div>
+                    <label>Level</label><input type="number" name="Level" min="0">
+                </div>
+
+                <!--Hit Points-->
+                <div>
+                    <label>Hit Points</label><input type="number" name="Hit Points" min="0">
+                </div>
+
+                <!--Race-->
+                <div>
+                    <select name="Secondary Class">
+                        <option value="Dragonborn">Dragonborn</option>
+                        <option value="Dwarf">Dwarf</option>
+                        <option value="Elf">Elf</option>
+                        <option value="Gnome">Gnome</option>
+                        <option value="Half-Elf">Half-Elf</option>
+                        <option value="Halfling">Halfling</option>
+                        <option value="Half-Orc">Half-Orc</option>
+                        <option value="Human">Human</option>
+                        <option value="Tiefling">Tiefling</option>
+                    </select>
+                </div>
+
+                <!--Augment-->
+                <div>
+                    <label>Augment</label><input type="number" name="Hit Points" min="0">
+                </div>
+
+                <!--Armor Class-->
+                <div>
+                    <label>Armor Class</label><input type="number" name="Hit Points" min="0">
+                </div>
+            </nav>
+
+            <!--Character Stats-->
+            <article>
+                <!--Dice Pool-->
+                <div>
+                    <ul>
+                        <!--Draggable Dice go here-->
+                    </ul>
+                </div>
+
+                <!--Character Stat Cards-->
+                <div>
+                    <!--Strength Stat-->
+                    <div>
+                        <div>
+                            <h2>Strength</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <!--Drag your dice into here-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Strength Stat-->
+                    <div>
+                        <div>
+                            <h2>Intelligence</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <!--Drag your dice into here-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Wisdom Stat-->
+                    <div>
+                        <div>
+                            <h2>Wisdom</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <!--Drag your dice into here-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Dexterity Stat-->
+                    <div>
+                        <div>
+                            <h2>Dexterity</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <!--Drag your dice into here-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Constitution Stat-->
+                    <div>
+                        <div>
+                            <h2>Constitution</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <!--Drag your dice into here-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Charisma Stat-->
+                    <div>
+                        <div>
+                            <h2>Charisma</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <!--Drag your dice into here-->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+    </content>
+
+    <!--Footer-->
+    <footer>
+        <!--Insert Copyright-->
+    </footer>
+    
+</body>
+</html>
