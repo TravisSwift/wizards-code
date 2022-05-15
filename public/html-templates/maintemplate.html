@@ -5,32 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dungeons and Dragons Character Generator</title>
-    <link href="/public/css/styles.css" rel="stylesheet">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'BIZ UDMincho', serif;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
 </head>
 
 <body>
     <!--Title-->
     <header>
-        <h1 class="text-3xl font-bold underline">Dungeons and Dragons Character Generator</h1>
+        <h1 class="underline">Dungeons and Dragons Character Generator</h1>
     </header>
 
     <!--Navigation Bar-->
     <nav>
-        <div class="">
-            <div>
-                <a>Learn More</a>
+        <div class="row">
+            <div class="one-half column row">
+                <div class="one-half column">
+                    <a>Learn More</a>
+                </div>
+
+                <div class="one-half column">
+                    <a>Character Sheet Generator</a>
+                </div>
             </div>
 
-            <div>
-                <a>Character Sheet Generator</a>
-            </div>
+            <div class="one-half column row">
+                <div class="one-half column">
+                    <button>Sign Up</button>
+                </div>
 
-            <div>
-                <button>Sign Up</button>
-            </div>
-
-            <div>
-                <button>Login</button>
+                <div class="one-half column">
+                    <button>Login</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -43,7 +59,7 @@
 
         <!--How it works section/maybe some instructions-->
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facilis a molestias eligendi voluptas. Veritatis hic quasi quis, ratione atque rem illo voluptates aliquid, sunt dolores at dolor praesentium adipisci.</p>
+            <p>Welcome to our Dungeons and Dragons Character Generator. </p>
         </div>
     </section>
 
@@ -52,16 +68,29 @@
     <content>
         <!--Generator Buttons-->
         <section>
-            <div>
-                <button>Roll a Character</button>
-            </div>
+            <div class="row">
+                <div class="one-half column">
+                    <div>
+                        <button>Roll Character</button>
+                    </div>
 
-            <div>
-                <button>Save Character</button>
-            </div>
+                    <div>
+                        <button>Save Character</button>
+                    </div>
 
-            <div>
-                <button>Load Character</button>
+                    <div>
+                        <button>Load Character</button>
+                    </div>
+                </div>
+
+                <!--Dice Pool-->
+                <div class="one-half column">
+                    <h2>Dice Tray</h2>
+                    <ul class="dice-tray">
+                        <!--Draggable Dice go here-->
+                    </ul>
+                </div>
+
             </div>
 
         </section>
@@ -78,6 +107,7 @@
                 <!--Primary Class-->
                 <div>
                     <select name="Primary Class">
+                        <option value="none" selected disabled hidden>Select a Primary Class</option>
                         <option value="Warrior">Barbarian</option>
                         <option value="Bard">Bard</option>
                         <option value="Cleric">Cleric</option>
@@ -98,6 +128,7 @@
                 <!--Secondary Class-->
                 <div>
                     <select name="Secondary Class">
+                        <option value="none" selected disabled hidden>Select a Secondary Class</option>
                         <option value="Warrior">Barbarian</option>
                         <option value="Bard">Bard</option>
                         <option value="Cleric">Cleric</option>
@@ -127,7 +158,8 @@
 
                 <!--Race-->
                 <div>
-                    <select name="Secondary Class">
+                    <select name="Race">
+                        <option value="none" selected disabled hidden>Select a Race</option>
                         <option value="Dragonborn">Dragonborn</option>
                         <option value="Dwarf">Dwarf</option>
                         <option value="Elf">Elf</option>
@@ -153,13 +185,7 @@
 
             <!--Character Stats-->
             <article>
-                <!--Dice Pool-->
-                <div>
-                    <ul>
-                        <!--Draggable Dice go here-->
-                    </ul>
-                </div>
-
+                
                 <!--Character Stat Cards-->
                 <div>
                     <!--Strength Stat-->

@@ -6,8 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "build-css": "tailwind build src/styles.css -o public/css/styles.css",
-    "live": "nodemon server.js" 
+    "live": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -26,9 +25,10 @@
     "express": "^4.18.1",
     "express-handlebars": "^6.0.5",
     "express-session": "^1.17.2",
+    "foundation-cli": "^2.3.2",
     "jest": "^28.1.0",
     "mysql2": "^2.3.3",
     "sequelize": "^6.19.0",
-    "tailwindcss": "^3.0.24"
+    "skeleton-css": "^2.0.4"
   }
 }
