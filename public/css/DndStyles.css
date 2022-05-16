@@ -1,32 +1,37 @@
-* {
-    margin:1px;
-    padding:1;
-}
-
 body{
-    background-color: red;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-header {
-    margin: auto;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.nav-buttons{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
-nav {
-    border: 2px;
-    border-style: solid;
-    border-color: black;
-    padding: 15px;
-    margin: 10px;
+.strength{
+color: red;
 }
 
-.dice-tray {
-    border: 2px;
-    border-style: solid;
-    border-color: black;
-    padding: 15px;
-    margin: 10px;
+.intelligence{
+color: blue;
+}
+
+.wisdom{
+color: rgb(51, 236, 236);
+}
+
+.dexterity{
+color: green;
+}
+
+.constitution{
+color: yellow;
+}
+
+.charisma{
+color: purple
+}
+
+.stat-button {
+    margin: 0.5%;
 }
