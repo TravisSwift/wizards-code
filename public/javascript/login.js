@@ -34,7 +34,7 @@ async function signupForm(event) {
 
     // if all information is provided
     if (username && email && password) {
-        await fetch("/api/users", {
+        const response = await fetch("/api/users", {
             method: "post",
             body: JSON.stringify({
                 username,
