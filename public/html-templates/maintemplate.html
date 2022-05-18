@@ -101,7 +101,7 @@
             <nav class="col-4 border-black">
                 
                     <!--EnterCharacter Name-->
-                    <div class="col-4 ml-2 flex space-x-4 ml-4 .border-0">
+                    <div class="col-4 ml-2 flex space-x-4 ml-4">
                         <label class="text-light ">Character Name</label><input type="text" name="character-name">
                     </div>
 
@@ -109,28 +109,31 @@
                         <div class="cols-2">
 
                             <!--Class Selection-->
-                            <div class="col-4 ml-4 ">
+                            
                                 <!--Primary Class-->
-                                <div>
-                                    <label class="text-light ">Primary Class</label>
-                                    <select name="Primary Class">
-                                        <option value="none" selected disabled hidden>Choose</option>
-                                        <option value="Warrior">Barbarian</option>
-                                        <option value="Bard">Bard</option>
-                                        <option value="Cleric">Cleric</option>
-                                        <option value="Druid">Druid</option>
-                                        <option value="Fighter">Fighter</option>
-                                        <option value="Monk">Monk</option>
-                                        <option value="Paladin">Paladin</option>
-                                        <option value="Ranger">Ranger</option>
-                                        <option value="Rogue">Rogue</option>
-                                        <option value="Sorcerer">Sorcerer</option>
-                                        <option value="Warlock">Warlock</option>
-                                        <option value="Wizard">Wizard</option>
-                                        <option value="Artificer">Artificer</option>
-                                        <option value="Blood-Hunter">Blood Hunter</option>
-                                    </select>
-                                </div>
+                                <div class="row">
+                                    <!--Race-->
+                                    <div class=" ml-4 mt-2 flex justify-between">
+                                        <label class="text-light ">Primary Class</label>
+                                        <select name="Primary Class">
+                                            <option value="Warrior">Barbarian</option>
+                                            <option value="Bard">Bard</option>
+                                            <option value="Cleric">Cleric</option>
+                                            <option value="Druid">Druid</option>
+                                            <option value="Fighter">Fighter</option>
+                                            <option value="Monk">Monk</option>
+                                            <option value="Paladin">Paladin</option>
+                                            <option value="Ranger">Ranger</option>
+                                            <option value="Rogue">Rogue</option>
+                                            <option value="Sorcerer">Sorcerer</option>
+                                            <option value="Warlock">Warlock</option>
+                                            <option value="Wizard">Wizard</option>
+                                            <option value="Artificer">Artificer</option>
+                                            <option value="Blood-Hunter">Blood Hunter</option>
+                                        </select>
+                                    </div>
+                                <div class="row">
+                             
 <!-- 
                                 Secondary Class
                                 <div>
@@ -155,21 +158,24 @@
                             </div>
 
                             <!--Level-->
-                            <div class=" ml-2">
-                                <div class="ml-2 mb-2">
-                                    <div class=""><label class="text-light">Level</label>
-                                        <input type="number" name="Level" min="0">
-                                    </div>
+                            <div class="col-4 ml-2  ">
+                                <div class="flex justify-between ml-2 mt-2">
+                                    <div class=""><label class="text-light">Level</label></div>
+                                    <div class="col-8">
+                                <input type="number" name="Hit Points" min="0">
+                            </div>
+                        </div>
+                            <div>
                                         
-                                    </div>
-                                </div>
+                            </div>
+                            </div>
 
                                
                             </div>
 
                             <!--Hit Points-->
                             <div class="col-4 ml-2  ">
-                                <div class="flex justify-between ml-2">
+                                <div class="flex justify-between ml-2 mt-2">
                                     <div class="col-4"><label class="text-light">Hit Points</label></div>
                                     <div class="col-8">
                                 <input type="number" name="Hit Points" min="0">
@@ -178,7 +184,7 @@
                     
                         <div class="row">
                             <!--Race-->
-                            <div class="col-4 ml-2 mb-2 mt-2">
+                            <div class="col- ml-2 mb-2 mt-2 flex justify-between">
                                 <label class="text-light ">Select Race</label>
                                 <select name="Race">
                                     <option value="none" selected disabled hidden>Choose</option>
@@ -338,7 +344,7 @@
                 <div class="row">
                     <!--Dice Pool-->
                     
-                    <div class="border border-danger container rounded ml-2 mr-4 border-2 border-rose-00 w-96"><img src="../img/dice/dicetray_4.png" alt="Dice Tray">
+                    <div class="border-black border-2 justify-center mb-2"><img src="../img/dice/dicetray_4.png" alt="Dice Tray">
                       
                      <!--Draggable Dice go here-->
                         </ul>
@@ -364,7 +370,7 @@
                 </div>
             </article>
 
-            <div class="col-1 saved_characters border border-black border-solid border-2">
+            <div class=" saved_characters border border-black border-solid border-2 h-400px w-800px">
                 <p> Saved Characters</p>
                 <!-- saved characters, load to right hand side-->
                 
