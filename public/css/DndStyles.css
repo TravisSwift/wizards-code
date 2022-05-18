@@ -35,3 +35,11 @@ color: purple
 .stat-button {
     margin: 0.5%;
 }
+
+.draggable {
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+}
