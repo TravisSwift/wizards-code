@@ -1,7 +1,7 @@
 body{
     margin-left: 2%;
     margin-right: 2%;
-    color: darkorange;
+    color: rgb(4, 2, 0);
     }
 
 .nav-buttons{
@@ -10,27 +10,27 @@ body{
 }
 
 .strength{
-color: red;
+color: rgb(4, 0, 0);
 }
 
 .intelligence{
-color: blue;
+color: rgb(0, 0, 5);
 }
 
 .wisdom{
-color: rgb(51, 236, 236);
+color: rgb(0, 5, 5);
 }
 
 .dexterity{
-color: green;
+color: rgb(0, 4, 0);
 }
 
 .constitution{
-color: yellow;
+color: rgb(4, 4, 0);
 }
 
 .charisma{
-color: purple
+color: rgb(6, 0, 6)
 }
 
 .stat-button {
@@ -39,11 +39,11 @@ color: purple
 
 .backgound {
 
-    color: darkorange;
+    color: rgb(9, 5, 0);
 }
 
 header  {
-    color: crimson;
+    color: rgb(5, 0, 1);
 }
 
  
