@@ -467,3 +467,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.hidden {
+  display: none;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+@media (min-width: 768px) {
+  .md\:w-32 {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-48 {
+    width: 12rem;
+  }
+}
