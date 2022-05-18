@@ -31,5 +31,8 @@
     "mysql2": "^2.3.3",
     "node-fetch": "^3.2.4",
     "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
   }
 }

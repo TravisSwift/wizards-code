@@ -1,7 +1,8 @@
 body{
     margin-left: 2%;
     margin-right: 2%;
-}
+    color: darkorange;
+    }
 
 .nav-buttons{
     padding-top: 0.5%;
@@ -35,3 +36,14 @@ color: purple
 .stat-button {
     margin: 0.5%;
 }
+
+.backgound {
+
+    color: darkorange;
+}
+
+header  {
+    color: crimson;
+}
+
+ 

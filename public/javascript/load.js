@@ -32,5 +32,8 @@ const displayCharacter = (character) => {
     // set various values in the page to display
 }
 
+// fetch character list on page load
+getCharList();
+
 // event listener
 loadBtn.addEventListener("click", loadBtnHandler);
