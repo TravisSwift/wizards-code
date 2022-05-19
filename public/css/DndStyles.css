@@ -46,4 +46,12 @@ header  {
     color: crimson;
 }
 
+.draggable {
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+}
+
  
