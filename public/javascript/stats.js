@@ -1,6 +1,19 @@
 // html ids
 const diceTray = document.getElementById("dice-tray");
 const diceBtn = document.getElementById("dice-btn");
+const stats = document.getElementsByClassName("stat");
+const strModEl = document.getElementById("str");
+const dexModEl = document.getElementById("dex");
+const conModEl = document.getElementById("con");
+const intModEl = document.getElementById("int");
+const wisModEl = document.getElementById("wis");
+const chaModEl = document.getElementById("cha");
+const strengthEl = document.getElementById("strength");
+const dexterityEl = document.getElementById("dexterity");
+const constitutionEl = document.getElementById("constitution");
+const intelligenceEl = document.getElementById("intelligence");
+const wisdomEl = document.getElementById("wisdom");
+const charismaEl = document.getElementById("charisma");
 
 const rollDice = (num, type) => {
     // store rolls in an array
@@ -45,14 +58,54 @@ const statRollHandler = (event) => {
     
     // for each stat in array, create and display dice in dice tray
     for (let i = 0; i < statsArr.length; i++) {
-        let statEl = document.createElement("div");
+        let statEl = document.createElement("p");
+        statEl.classList = "text-white draggable mx-3 mt-7";
+        statEl.draggable = "true"
 
         statEl.textContent = statsArr[i];
         diceTray.appendChild(statEl);
     }
 }
 
+const getModifier = (stat) => {
+    // stat will be rounded down (so 9 is -1 & 11 is 0)
+    let mod = Math.floor((stat - 10) / 2);
+    return mod;
+}
+
+const showModifier = function (event) {
+    // grab the stat & get the modifier
+    let mod = getModifier(this.value.trim());
+
+    // get check which stat has been modified, then display modifier
+    switch (this.id) {
+        case "strength":
+            strModEl.value = mod;
+            break;
+        case "dexterity":
+            dexModEl.value = mod;
+            break;
+        case "constitution":
+            conModEl.value = mod;
+            break;
+        case "intelligence":
+            intModEl.value = mod;
+            break;
+        case "wisdom":
+            wisModEl.value = mod;
+            break;
+        case "charisma":
+            chaModEl.value = mod;
+            break;
+    }
+}
 
 // event listener
-// dice tray needs a button
 diceBtn.addEventListener("click", statRollHandler);
+// when dice are added to a stat, get the modifier
+strengthEl.addEventListener("change", showModifier);
+dexterityEl.addEventListener("change", showModifier);
+constitutionEl.addEventListener("change", showModifier);
+intelligenceEl.addEventListener("change", showModifier);
+wisdomEl.addEventListener("change", showModifier);
+charismaEl.addEventListener("change", showModifier);

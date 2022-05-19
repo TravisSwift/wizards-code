@@ -136,16 +136,16 @@
                 <h3 class="strength">Strength</h3>
             </div>
 
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                {{!-- <p id="strength">this is where your dice go</p> --}}
+                <input type="number" name="strength" id="strength">
+            </div>
+
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 <input type="number" name="str" id="str">
                 {{!-- <p id="str">this is where your bonuses go</p> --}}
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                {{!-- <p id="strength">this is where your dice go</p> --}}
-                 <input type="number" name="strength" id="strength">
             </div>
             <!--END STRENGTH STAT-->
 
@@ -155,16 +155,16 @@
                 <h3 class="dexterity">Dexterity</h3>
             </div>
 
-            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
-                <!--THIS IS WHERE BONSUSES GO-->
-                {{!-- <p id="dex">this is where your bonuses go</p> --}}
-                 <input type="number" name="dex" id="dex">
-            </div>
-
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
                 {{!-- <p id="dexterity">this is where your dice go</p> --}}
-                 <input type="number" name="dexterity" id="dexterity">
+                <input type="number" name="dexterity" id="dexterity">
+            </div>
+
+            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                <!--THIS IS WHERE BONSUSES GO-->
+                {{!-- <p id="dex">this is where your bonuses go</p> --}}
+                <input type="number" name="dex" id="dex">
             </div>
             <!--END DEXTERITY STAT-->
 
@@ -174,16 +174,16 @@
                 <h3 class="constitution">Constitution</h3>
             </div>
 
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                {{!-- <p id="constitution" class="stat">this is where your dice go</p> --}}
+                <input type="number" name="constitution" id="constitution">
+            </div>
+
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="con">this is where your bonuses go</p> --}}
-                 <input type="number" name="con" id="con">
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                {{!-- <p id="constitution">this is where your dice go</p> --}}
-                 <input type="number" name="constitution" id="constitution">
+                <input type="number" name="con" id="con">
             </div>
             <!--END CONSTITUTION STAT-->
 
@@ -193,16 +193,17 @@
                 <h3 class="intelligence">Intelligence</h3>
             </div>
 
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                {{!-- <p id="intelligence" class="stat">this is where your dice go</p> --}}
+                <input type="number" name="intelligence" id="intelligence">
+
+            </div>
+
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="int">this is where your bonuses go</p> --}}
-                 <input type="number" name="int" id="int">
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                {{!-- <p id="intelligence">this is where your dice go</p> --}}
-                 <input type="number" name="intelligence" id="intelligence">
+                <input type="number" name="int" id="int">
             </div>
             <!--END INTELLIGENCE STAT-->
 
@@ -212,16 +213,17 @@
                 <h3 class="wisdom">Wisdom</h3>
             </div>
 
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                {{!-- <p id="wisdom" class="stat">this is where your dice go</p> --}}
+                <input type="number" name="wisdom" id="wisdom">
+
+            </div>
+
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="wis">this is where your bonuses go</p> --}}
-                 <input type="number" name="wis" id="wis">
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                {{!-- <p id="wisdom">this is where your dice go</p> --}}
-                 <input type="number" name="wisdom" id="wisdom">
+                <input type="number" name="wis" id="wis">
             </div>
             <!--END WISDOM STAT-->
 
@@ -231,16 +233,16 @@
                 <h3 class="charisma">Charisma</h3>
             </div>
 
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                {{!-- <p id="charisma" class="stat">this is where your dice go</p> --}}
+                <input type="number" name="charisma" id="charisma">
+            </div>
+
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="cha">this is where your bonuses go</p> --}}
-                 <input type="number" name="cha" id="cha">
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                {{!-- <p id="charisma">this is where your dice go</p> --}}
-                 <input type="number" name="charisma" id="charisma">
+                <input type="number" name="cha" id="cha">
             </div>
             <!--END CHARISMA STAT-->
 
@@ -259,10 +261,10 @@
         <div>
             <div class="row">
                 <!--Dice Pool-->
-                <div class="container border-black border-2 justify-center mb-6 shadow-lg shadow-black" style="background-image: url(/img/dice/dicetray_4.png)">
-                    <!-- <img src="/img/dice/dicetray_4.png" alt="Dice Tray"> -->
+                <div class="container border-black border-2 justify-center mb-6 shadow-lg shadow-black grid grid-col-4 h-24 gap-4"
+                    style="background-image: url(/img/dice/dicetray_4.png)">
                     <!--Draggable Dice go here-->
-                    <p id="dice-tray"></p>
+                    <div id="dice-tray" class="inline-flex object-center"></div>
                 </div>
             </div>
 
@@ -277,3 +279,5 @@
     </article>
     <!--END DICE TRAY + CHARACTER IMAGE-->
     <script src="/javascript/stats.js"></script>
+    <script src="/javascript/draggable.js"></script>
+    <script src="/javascript/save.js"></script>

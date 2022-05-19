@@ -11,12 +11,12 @@ const saveBtnHandler = (event) => {
     // grab info
     character.name = document.getElementById("name").value;
     character.class = document.getElementById("class").value;
-    character.strength = document.getElementById("strength").value;
-    character.dexterity = document.getElementById("dexterity").value;
-    character.constitution = document.getElementById("constitution").value;
-    character.intelligence = document.getElementById("intelligence").value;
-    character.wisdom = document.getElementById("wisdom").value;
-    character.charisma = document.getElementById("charisma").value;
+    character.strength = document.getElementById("strength").value.trim();
+    character.dexterity = document.getElementById("dexterity").value.trim();
+    character.constitution = document.getElementById("constitution").value.trim();
+    character.intelligence = document.getElementById("intelligence").value.trim();
+    character.wisdom = document.getElementById("wisdom").value.trim();
+    character.charisma = document.getElementById("charisma").value.trim();
     character.race = document.getElementById("race").value;
     character.hit_points = document.getElementById("hit-points").value;
     character.armor_class = document.getElementById("armor-class").value;
@@ -37,12 +37,19 @@ const saveFetch = (character) => {
     });
 
     if (response.ok) {
-        // alert people somehow? reload page?
-        alert("Character saved!");
+        // reload page
+        document.location.reload();
     } else {
-        alert(response.statusText);
+        console.log("Something went wrong!");
     }
+}
+
+const refreshPage = (event) => {
+    setInterval(function(){
+        document.location.reload();
+    }, 200);
 }
 
 // event listener
 saveCharBtn.addEventListener("click", saveBtnHandler);
+saveCharBtn.addEventListener("click", refreshPage);
