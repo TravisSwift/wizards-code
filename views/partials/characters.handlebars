@@ -1,6 +1,15 @@
-<section class="card">
+{{!-- <section class="card">
     <h2>Your Characters</h2>
     {{#each characters as |character|}}
-    <a href="/characters/{{id}}" target="_blank">{{name}}</a> 
+    <a href="/characters/{{id}}" target="_blank">{{name}}</a>
+    {{/each}} --}}
+<section>
+<!--BEGINNING LOAD CHARACTER TRAY-->
+<div class=" saved_characters border border-black border-solid border-2 h-400px w-800px">
+    <p> Saved Characters</p>
+    {{#each characters as |character|}}
+    <a href="/characters/{{id}}" target="_blank">{{name}}</a>
     {{/each}}
+</div>
+<!--END LOAD CHARACTER TRAY-->
 </section>

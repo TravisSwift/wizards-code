@@ -1,36 +1,6 @@
-  {{!-- <!--Splash Page-->
-    {{> learnmore}} --}}
+<!--CHARACTER CREATION STATS-->
+{{> stats}}
 
-    <!--Generator Buttons-->
-    <section>
-        <div class="row border border-danger rounded">
-            <div class="col-4">
-                <div>
-                    <button class="justify-content-center">Roll Character</button>
-                </div>
-            </div>
-
-
-            <!--CHECK if logged in-->
-
-            {{#if loggedIn}}
-            <div class="col-4">
-                <button class="">Save Character</button>
-            </div>
-
-            <div class="col-4">
-                <button class="">Load Character</button>
-            </div>
-            {{else}}
-            <p>Must be logged in to save characters</p>
-            {{/if}}
-        </div>
-
-    </section>
-   
-
-    <!--CHARACTER CREATION STATS-->
-    {{> stats}}
-
- {{> characters}}
- 
+{{#if loggedIn}}
+{{> characters}}
+{{/if}}
