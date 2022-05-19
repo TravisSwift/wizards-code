@@ -7,7 +7,7 @@
         <div class="row border border-danger rounded ml-2 mr-2 flex justify-center   text-3xl border-2 border-black">
             <div class="col-4 ml-10">
                 <div>
-                    <button class="content-between ml-10 mr-10">Roll Stats</button>
+                    <button class="content-between ml-10 mr-10" id="dice-btn">Roll Stats</button>
                 </div>
             </div>
             {{#if loggedIn}}
@@ -148,40 +148,6 @@
             <!--END STRENGTH STAT-->
 
 
-            <!--START INTELLIGENCE STAT-->
-            <div class="flex justify-between ml-2 mb-2 stat-button ">
-                <h3 class="intelligence">Intelligence</h3>
-            </div>
-
-            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
-                <!--THIS IS WHERE BONSUSES GO-->
-                <p id="int">this is where your bonuses go</p>
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                <p id="intelligence">this is where your dice go</p>
-            </div>
-            <!--END INTELLIGENCE STAT-->
-
-
-            <!--START WISDOM STAT-->
-            <div class="flex justify-between ml-2 mb-2 stat-button ">
-                <h3 class="wisdom">Wisdom</h3>
-            </div>
-
-            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
-                <!--THIS IS WHERE BONSUSES GO-->
-                <p id="wis">this is where your bonuses go</p>
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                <p id="wisdom">this is where your dice go</p>
-            </div>
-            <!--END WISDOM STAT-->
-
-
             <!--START DEXTERITY STAT-->
             <div class="flex justify-between ml-2 mb-2 stat-button ">
                 <h3 class="dexterity">Dexterity</h3>
@@ -216,6 +182,40 @@
             <!--END CONSTITUTION STAT-->
 
 
+            <!--START INTELLIGENCE STAT-->
+            <div class="flex justify-between ml-2 mb-2 stat-button ">
+                <h3 class="intelligence">Intelligence</h3>
+            </div>
+
+            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                <!--THIS IS WHERE BONSUSES GO-->
+                <p id="int">this is where your bonuses go</p>
+            </div>
+
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                <p id="intelligence">this is where your dice go</p>
+            </div>
+            <!--END INTELLIGENCE STAT-->
+
+
+            <!--START WISDOM STAT-->
+            <div class="flex justify-between ml-2 mb-2 stat-button ">
+                <h3 class="wisdom">Wisdom</h3>
+            </div>
+
+            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                <!--THIS IS WHERE BONSUSES GO-->
+                <p id="wis">this is where your bonuses go</p>
+            </div>
+
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                <p id="wisdom">this is where your dice go</p>
+            </div>
+            <!--END WISDOM STAT-->
+
+
             <!--START CHARISMA STAT-->
             <div class="flex justify-between ml-2 mb-2 stat-button ">
                 <h3 class="charisma">Charisma</h3>
@@ -247,9 +247,10 @@
         <div>
             <div class="row">
                 <!--Dice Pool-->
-                <div class="container border-black border-2 justify-center mb-6 shadow-lg shadow-black" id="dice-tray">
-                    <img src="/img/dice/dicetray_4.png" alt="Dice Tray">
+                <div class="container border-black border-2 justify-center mb-6 shadow-lg shadow-black" style="background-image: url(/img/dice/dicetray_4.png)">
+                    <!-- <img src="/img/dice/dicetray_4.png" alt="Dice Tray"> -->
                     <!--Draggable Dice go here-->
+                    <p id="dice-tray"></p>
                 </div>
             </div>
 
@@ -263,3 +264,4 @@
         </div>
     </article>
     <!--END DICE TRAY + CHARACTER IMAGE-->
+    <script src="/javascript/stats.js"></script>
