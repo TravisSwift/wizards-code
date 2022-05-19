@@ -75,28 +75,27 @@ const getModifier = (stat) => {
 
 const showModifier = function (event) {
     // grab the stat & get the modifier
-    let mod = getModifier(this.textContent);
+    let mod = getModifier(this.value.trim());
 
     // get check which stat has been modified, then display modifier
     switch (this.id) {
         case "strength":
-            console.log("haha");
-            strModEl.textContent = mod;
+            strModEl.value = mod;
             break;
         case "dexterity":
-            dexModEl.textContent = mod;
+            dexModEl.value = mod;
             break;
         case "constitution":
-            conModEl.textContent = mod;
+            conModEl.value = mod;
             break;
         case "intelligence":
-            intModEl.textContent = mod;
+            intModEl.value = mod;
             break;
         case "wisdom":
-            wisModEl.textContent = mod;
+            wisModEl.value = mod;
             break;
         case "charisma":
-            chaModEl.textContent = mod;
+            chaModEl.value = mod;
             break;
     }
 }
