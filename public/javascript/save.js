@@ -11,12 +11,12 @@ const saveBtnHandler = (event) => {
     // grab info
     character.name = document.getElementById("name").value;
     character.class = document.getElementById("class").value;
-    character.strength = document.getElementById("strength").value;
-    character.dexterity = document.getElementById("dexterity").value;
-    character.constitution = document.getElementById("constitution").value;
-    character.intelligence = document.getElementById("intelligence").value;
-    character.wisdom = document.getElementById("wisdom").value;
-    character.charisma = document.getElementById("charisma").value;
+    character.strength = document.getElementById("strength").textContent;
+    character.dexterity = document.getElementById("dexterity").textContent;
+    character.constitution = document.getElementById("constitution").textContent;
+    character.intelligence = document.getElementById("intelligence").textContent;
+    character.wisdom = document.getElementById("wisdom").textContent;
+    character.charisma = document.getElementById("charisma").textContent;
     character.race = document.getElementById("race").value;
     character.hit_points = document.getElementById("hit-points").value;
     character.armor_class = document.getElementById("armor-class").value;

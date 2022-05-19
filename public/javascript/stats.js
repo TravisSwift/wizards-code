@@ -59,7 +59,7 @@ const statRollHandler = (event) => {
     // for each stat in array, create and display dice in dice tray
     for (let i = 0; i < statsArr.length; i++) {
         let statEl = document.createElement("div");
-        statEl.classList = "text-white draggable";
+        statEl.classList = "text-white draggable mx-3 mt-7";
         statEl.draggable = "true"
 
         statEl.textContent = statsArr[i];
@@ -74,21 +74,29 @@ const getModifier = (stat) => {
 }
 
 const showModifier = function (event) {
-    // get check which stat has been modified, then
-    // 
+    // grab the stat & get the modifier
+    let mod = getModifier(this.textContent);
+
+    // get check which stat has been modified, then display modifier
     switch (this.id) {
         case "strength":
             console.log("haha");
+            strModEl.textContent = mod;
             break;
         case "dexterity":
+            dexModEl.textContent = mod;
             break;
         case "constitution":
+            conModEl.textContent = mod;
             break;
         case "intelligence":
+            intModEl.textContent = mod;
             break;
         case "wisdom":
+            wisModEl.textContent = mod;
             break;
         case "charisma":
+            chaModEl.textContent = mod;
             break;
     }
 }
@@ -97,8 +105,8 @@ const showModifier = function (event) {
 diceBtn.addEventListener("click", statRollHandler);
 // when dice are added to a stat, get the modifier
 strengthEl.addEventListener("change", showModifier);
-dexterityEl.addEventListener();
-constitutionEl.addEventListener();
-intelligenceEl.addEventListener();
-wisdomEl.addEventListener();
-charismaEl.addEventListener();
+dexterityEl.addEventListener("change", showModifier);
+constitutionEl.addEventListener("change", showModifier);
+intelligenceEl.addEventListener("change", showModifier);
+wisdomEl.addEventListener("change", showModifier);
+charismaEl.addEventListener("change", showModifier);
