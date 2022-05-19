@@ -38,6 +38,7 @@ const saveFetch = (character) => {
 
     if (response.ok) {
         // alert people somehow? reload page?
+        alert("Character saved!");
     } else {
         alert(response.statusText);
     }
