@@ -29,7 +29,8 @@ const getStat = () => {
 
 // when dice tray roller button is clicked, roll and display six stats
 const statRollHandler = (event) => {
-    event.preventDefault();
+    // if any stats are present, clear them first
+    diceTray.textContent = "";
 
     // store stats in an array
     let statsArr = [];

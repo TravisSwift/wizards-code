@@ -28,7 +28,7 @@ const saveBtnHandler = (event) => {
 
 // send character object to server
 const saveFetch = (character) => {
-    const response = await fetch(`api/characters`, {
+    const response = fetch(`api/characters`, {
         method: 'POST',
         body: JSON.stringify(character),
         headers: {
