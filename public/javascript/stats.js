@@ -1,7 +1,18 @@
-const rollDice = require('./dice');
-
 // html ids
 const diceTray = document.getElementById("dice-tray");
+const diceBtn = document.getElementById("dice-btn");
+
+const rollDice = (num, type) => {
+    // store rolls in an array
+    let arr = [];
+
+    // "roll" num times & push to array
+    for (let i = 0; i < num; i ++) {
+        let result = Math.floor(Math.random() * type + 1);
+        arr.push(result);
+    }
+    return arr;
+}
 
 const getStat = () => {
     // roll 4d6
@@ -43,4 +54,4 @@ const statRollHandler = (event) => {
 
 // event listener
 // dice tray needs a button
-module.exports = getStat;
+diceBtn.addEventListener("click", statRollHandler);

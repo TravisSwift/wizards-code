@@ -9,7 +9,7 @@ const saveBtnHandler = (event) => {
     let character = {};
 
     // grab info
-    character.name;
+    character.name = document.getElementById("name").value;
     character.class = document.getElementById("class").value;
     character.strength = document.getElementById("strength").value;
     character.dexterity = document.getElementById("dexterity").value;

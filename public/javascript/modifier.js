@@ -3,5 +3,3 @@ const getModifier = (stat) => {
     let mod = Math.floor((stat - 10) / 2);
     return mod;
 }
-
-module.exports = getModifier;
