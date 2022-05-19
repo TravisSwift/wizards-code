@@ -59,7 +59,7 @@ const statRollHandler = (event) => {
     // for each stat in array, create and display dice in dice tray
     for (let i = 0; i < statsArr.length; i++) {
         let statEl = document.createElement("div");
-        statEl.classList = "text-white draggable";
+        statEl.className = "text-white draggable container";
         statEl.draggable = "true"
 
         statEl.textContent = statsArr[i];
