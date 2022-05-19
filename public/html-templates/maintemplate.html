@@ -28,29 +28,25 @@
  
  
 <body class="bg-neutral-400/[.6]">
-<div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"></div>
-      </div>
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"></div>
+    </div>
       
               <!-- Width of 16 by default, 32 on medium screens, and 48 on large screens -->
               <!--<img class="w-16 md:w-32 lg:w-48" src="...">-->
-    <!--Title-->
+    <!--BEGINNING TITLE-->
     <header>
         <h1 class="text-light text-2xl ml-2 text-decoration-underline">Dungeons and Dragons Character Generator</h1>
     </header>
+    <!--END TITLE-->
 
-    <!--Navigation Bar-->
+    <!--BEGINNING NAVIGATION BAR-->
     <nav>
-        
         <!--<div class="flex place-content: space-between;">
             <div class="col-3 nav-buttons ml-4 mr-2">
                 <a class="text-light">Learn More</a>
             </div> -->
 
-            <div class="flex place-content: space-around justify-end">
-            <div class="col-3 nav-buttons ml-2 mr-2">
-                <!--<a class="text-light">Character Sheet Generator</a> -->
-            </div>
-
+        <div class="flex place-content: space-around justify-end">
             <div class="col-3 nav-buttons text-lg ml-2 mr-5">
                 <a class="text-light">Sign Up</a>
             </div>
@@ -60,8 +56,9 @@
             </div>
         </div>
     </nav>
+    <!--END NAVIGATION BAR-->
 
-    <!--Splash Page-->
+    <!--BEGINNING BANNER-->
     <section>
         <div>
             <img class="text-light border-2 border-black ml-2"src="../img/dnd-banner.jpg" alt="traveler on a horse entering the castle gates">
@@ -73,10 +70,13 @@
             <p class="text-light text-black-600 border border-danger rounded ml-2">Welcome to our Dungeons and Dragons Character Generator. </p>
         </div>
     </section>
-<br>
-    <!--Character Creation-->
+    <!--END BANNER-->
+
+    <!--CHARACTER CREATION-->
     <content>
-        <!--Generator Buttons-->
+
+
+        <!--BEGINNING GENERATOR BUTTONS-->
         <section class="row">
             <div class="row border border-danger rounded ml-2 mr-2 flex justify-center   text-3xl border-2 border-black">
                 <div class="col-4 ml-10">
@@ -95,295 +95,259 @@
             </div>
 
         </section>
-<br>
-        <!--Character Stats Section-->
-        <section class="flex justify-between">
-            <nav class="col-4 border-black">
-                
-                    <!--EnterCharacter Name-->
-                    <div class="col-4 ml-2 flex space-x-4 ml-4">
-                        <label class="text-light ">Character Name</label><input type="text" name="character-name">
-                    </div>
+        <!--END GENERATOR BUTTONS-->
+    </content>
 
-                    <div class="col-8">
-                        <div class="cols-2">
+<!-----------------------------------------------------------------------------CHARACTER STATS----------------------------------------------------------------------------->
+    <section class="flex justify-between">
+<!--------------------------------------------------------------------------------COLUMN #1-------------------------------------------------------------------------------->
+        <!--BEGINNING CHARACTER STATS-->
+        <nav class="col-4 border-black">
 
-                            <!--Class Selection-->
-                            
-                                <!--Primary Class-->
-                                <div class="row">
-                                    <!--Race-->
-                                    <div class=" ml-4 mt-2 flex justify-between">
-                                        <label class="text-light ">Primary Class</label>
-                                        <select name="Primary Class">
-                                            <option value="Warrior">Barbarian</option>
-                                            <option value="Bard">Bard</option>
-                                            <option value="Cleric">Cleric</option>
-                                            <option value="Druid">Druid</option>
-                                            <option value="Fighter">Fighter</option>
-                                            <option value="Monk">Monk</option>
-                                            <option value="Paladin">Paladin</option>
-                                            <option value="Ranger">Ranger</option>
-                                            <option value="Rogue">Rogue</option>
-                                            <option value="Sorcerer">Sorcerer</option>
-                                            <option value="Warlock">Warlock</option>
-                                            <option value="Wizard">Wizard</option>
-                                            <option value="Artificer">Artificer</option>
-                                            <option value="Blood-Hunter">Blood Hunter</option>
-                                        </select>
-                                    </div>
-                                <div class="row">
-                             
-<!-- 
-                                Secondary Class
-                                <div>
-                                    <select name="Secondary Class ml-2">
-                                        <option value="none" selected disabled hidden>Select a Secondary Class</option>
-                                        <option value="Warrior">Barbarian</option>
-                                        <option value="Bard">Bard</option>
-                                        <option value="Cleric">Cleric</option>
-                                        <option value="Druid">Druid</option>
-                                        <option value="Fighter">Fighter</option>
-                                        <option value="Monk">Monk</option>
-                                        <option value="Paladin">Paladin</option>
-                                        <option value="Ranger">Ranger</option>
-                                        <option value="Rogue">Rogue</option>
-                                        <option value="Sorcerer">Sorcerer</option>
-                                        <option value="Warlock">Warlock</option>
-                                        <option value="Wizard">Wizard</option>
-                                        <option value="Artificer">Artificer</option>
-                                        <option value="Blood-Hunter">Blood Hunter</option>
-                                    </select>
-                                </div> -->
-                            </div>
 
-                            <!--Level-->
-                            <div class="col-4 ml-2  ">
-                                <div class="flex justify-between ml-2 mt-2">
-                                    <div class=""><label class="text-light">Level</label></div>
-                                    <div class="col-8">
-                                <input type="number" name="Hit Points" min="0">
-                            </div>
-                        </div>
-                            <div>
-                                        
-                            </div>
-                            </div>
+    <!--------------------------------------------------------------------------------INPUT STATS-------------------------------------------------------------------------------->
+            <section class="grid grid-cols-2 gap-4">
+                <!--EnterCharacter Name-->
+                <div class="col-4 ml-2 flex space-x-4 ml-4">
+                    <label class="text-light ">Character Name</label><input type="text" name="character-name">
+                </div>
+                        
+                <!--START CLASS-->
+                <div class=" ml-4 mt-2 flex justify-between">
+                    <label class="text-light ">Primary Class</label>
+                    <select name="Primary Class">
+                        <option value="Warrior">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Cleric">Cleric</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Rogue">Rogue</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
+                        <option value="Wizard">Wizard</option>
+                        <option value="Artificer">Artificer</option>
+                        <option value="Blood-Hunter">Blood Hunter</option>
+                    </select>
+                </div>
+                <!--END CLASS-->
 
-                               
-                            </div>
-
-                            <!--Hit Points-->
-                            <div class="col-4 ml-2  ">
-                                <div class="flex justify-between ml-2 mt-2">
-                                    <div class="col-4"><label class="text-light">Hit Points</label></div>
-                                    <div class="col-8">
-                                <input type="number" name="Hit Points" min="0">
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <!--Race-->
-                            <div class="col- ml-2 mb-2 mt-2 flex justify-between">
-                                <label class="text-light ">Select Race</label>
-                                <select name="Race">
-                                    <option value="none" selected disabled hidden>Choose</option>
-                                    <option value="Dragonborn">Dragonborn</option>
-                                    <option value="Dwarf">Dwarf</option>
-                                    <option value="Elf">Elf</option>
-                                    <option value="Gnome">Gnome</option>
-                                    <option value="Half-Elf">Half-Elf</option>
-                                    <option value="Halfling">Halfling</option>
-                                    <option value="Half-Orc">Half-Orc</option>
-                                    <option value="Human">Human</option>
-                                    <option value="Tiefling">Tiefling</option>
-                                </select>
-                            </div>
-
-                            <!--Augment-->
-                            <div class="col-4 flex justify-between ml-2 mb-2">
-                                <label class="text-light">Augment</label><input type="number" name="Hit Points" min="0">
-                            </div>
-
-                            <!--Armor Class-->
-                            <div class="col-4 flex justify-between ml-2">
-                                <label class="text-light">Armor Class</label><input type="number" name="Hit Points" min="0">
-                            </div>
-                        </div>
-<br>
-                    <!--Character Stat Cards-->
-                    <div class="row">
+                <!--START LEVEL-->
+                <div class="col-4 ml-2  ">
+                    <div class="flex justify-between ml-2 mt-2">
                         <div class="">
-                            <!--Strength Stat-->
-                            <div class="row">
-                                <div class="col-4 flex justify-between ml-2 mb-2 stat-button ">
-                                <h3 class="strength">Strength</h3> <input type="number" name="strength" min="0">
-                                </div>
-
-                                <div class="col-3 flex justify-between  border border-danger border-solid rounded stat-button ">
-                                    <!--THIS IS WHERE BONSUSES GO-->
-                                    
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
-                                        <!--Drag your dice into here-->
-                                        <form action=""></form>
-                                    </ul>
-                                </div>
-                                
-                            </div>
-
-                            <!--Intelligence Stat-->
-                            <div class="row">
-                                <div class="col-4 flex justify-between ml-2 mb-2  stat-button ">
-                                    <h3 class="intelligence">Intelligence</h3> <input type="number" name="intelligence" min="0">
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <!--THIS IS WHERE BONSUSES GO-->
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
-                                        <!--Drag your dice into here-->
-                                    </ul>
-                                </div>
-                                
-                            </div>
-
-                            <!--Wisdom Stat-->
-                            <div class="row">
-                                <div class="col-4 flex justify-between ml-2 mb-2  stat-button">
-                                    <h3 class="wisdom">Wisdom</h3><input type="number" name="wisdom" min="0">
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <!--THIS IS WHERE BONSUSES GO-->
-                                    <div class="container">
-                                        <div class="box">
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
-                                        <!--Drag your dice into here-->
-                                    </ul>
-                                </div>
-                                
-                            </div>
-
-                            <!--Dexterity Stat-->
-                            <div class="row">
-                                <div class="col-4 flex justify-between ml-2 mb-2  stat-button">
-                                    <h3 class="dexterity">Dexterity</h3><input type="number" name="dexterity" min="0">
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <!--THIS IS WHERE BONSUSES GO-->
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
-                                        <!--Drag your dice into here-->
-                                    </ul>
-                                </div>
-                                
-                            </div>
-
-                            <!--Constitution Stat-->
-                            <div class="row">
-                                <div class="col-4 flex justify-between ml-2 mb-2 stat-button">
-                                    <h3 class="constitution">Constitution</h3><input type="number" name="constitution" min="0">
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <!--THIS IS WHERE BONSUSES GO-->
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
-                                        <!--Drag your dice into here-->
-                                    </ul>
-                                </div>
-                                
-                            </div>
-
-                            <!--Charisma Stat-->
-                            <div class="row">
-                                <div class="col-4 flex justify-between ml-2 mb-2    stat-button">
-                                    <h3 class="charisma">Charisma</h3><input type="number" name="charisma" min="0">
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <!--THIS IS WHERE BONSUSES GO-->
-                                </div>
-
-                                <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
-                                        <!--Drag your dice into here-->
-                                    </ul>
-                                </div>
-                                
-                            </div>
-
+                            <label class="text-light">Level</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="number" name="Hit Points" min="0">
+                        </div>
                     </div>
                 </div>
-            </nav>
+                <!--END LEVEL-->
 
-           <!-- <div class="col-4">
-                <img src="img"/>
-            </div> --> 
 
-            <!--Character Stats-->
-            <article class="col-4">
+                <!--START HITPOINTS-->
+                <div class="col-4 ml-2  ">
+                    <div class="flex justify-between ml-2 mt-2">
+                        <div class="col-4">
+                            <label class="text-light">Hit Points</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="number" name="Hit Points" min="0">
+                        </div>
+                    </div>
+                </div>
+                <!--END HITPOINTS-->
+                
 
+                <!--START RACE-->
+                <div class="col- ml-2 mb-2 mt-2 flex justify-between">
+                    <label class="text-light ">Select Race</label>
+                    <select name="Race">
+                        <option value="none" selected disabled hidden>Choose</option>
+                        <option value="Dragonborn">Dragonborn</option>
+                        <option value="Dwarf">Dwarf</option>
+                        <option value="Elf">Elf</option>
+                        <option value="Gnome">Gnome</option>
+                        <option value="Half-Elf">Half-Elf</option>
+                        <option value="Halfling">Halfling</option>
+                        <option value="Half-Orc">Half-Orc</option>
+                        <option value="Human">Human</option>
+                        <option value="Tiefling">Tiefling</option>
+                    </select>
+                </div>
+                <!--START RACE-->
+
+
+                <!--START AUGMENT-->
+                <div class="col-4 flex justify-between ml-2 mb-2">
+                    <label class="text-light">Augment</label>
+                    <input type="number" name="Hit Points" min="0">
+                </div>
+                <!--END AUGMENT-->
+
+
+                <!--START ARMOR CLASS-->
+                <div class="col-4 flex justify-between ml-2">
+                    <label class="text-light">Armor Class</label>
+                    <input type="number" name="Hit Points" min="0">
+                </div>
+                <!--END ARMOR CLASS-->
+            </section>
+
+    <!--------------------------------------------------------------------------------DICE STATS-------------------------------------------------------------------------------->
+            <!--START CHARACTER STAT CARDS-->
+            <section class=" grid grid-cols-3 gap-4">
+
+
+                <!--START STRENGTH STAT-->
+                    <div class="flex justify-between ml-2 mb-2 stat-button ">
+                    <h3 class="strength">Strength</h3>
+                    </div>
+
+                    <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                        <!--THIS IS WHERE BONSUSES GO-->
+                        <p>this is where your bonuses go</p>
+                    </div>
+
+                    <!--DICE INSERT-->
+                    <div class="container border border-danger rounded stat-button">
+                        <p>this is where your dice go</p>
+                    </div>
+                <!--END STRENGTH STAT-->
+
+
+                <!--START INTELLIGENCE STAT-->
+                    <div class="flex justify-between ml-2 mb-2 stat-button ">
+                    <h3 class="intelligence">Intelligence</h3>
+                    </div>
+
+                    <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                        <!--THIS IS WHERE BONSUSES GO-->
+                        <p>this is where your bonuses go</p>
+                    </div>
+
+                    <!--DICE INSERT-->
+                    <div class="container border border-danger rounded stat-button">
+                        <p>this is where your dice go</p>
+                    </div>
+                <!--END INTELLIGENCE STAT-->
+
+
+                <!--START WISDOM STAT-->
+                    <div class="flex justify-between ml-2 mb-2 stat-button ">
+                    <h3 class="wisdom">Wisdom</h3>
+                    </div>
+
+                    <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                        <!--THIS IS WHERE BONSUSES GO-->
+                        <p>this is where your bonuses go</p>
+                    </div>
+
+                    <!--DICE INSERT-->
+                    <div class="container border border-danger rounded stat-button">
+                        <p>this is where your dice go</p>
+                    </div>
+                <!--END WISDOM STAT-->
+
+
+                <!--START DEXTERITY STAT-->
+                    <div class="flex justify-between ml-2 mb-2 stat-button ">
+                    <h3 class="dexterity">Dexterity</h3>
+                    </div>
+
+                    <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                        <!--THIS IS WHERE BONSUSES GO-->
+                        <p>this is where your bonuses go</p>
+                    </div>
+
+                    <!--DICE INSERT-->
+                    <div class="container border border-danger rounded stat-button">
+                        <p>this is where your dice go</p>
+                    </div>
+                <!--END DEXTERITY STAT-->
+
+
+                <!--START CONSTITUTION STAT-->
+                    <div class="flex justify-between ml-2 mb-2 stat-button ">
+                    <h3 class="constitution">Constitution</h3>
+                    </div>
+
+                    <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                        <!--THIS IS WHERE BONSUSES GO-->
+                        <p>this is where your bonuses go</p>
+                    </div>
+
+                    <!--DICE INSERT-->
+                    <div class="container border border-danger rounded stat-button">
+                        <p>this is where your dice go</p>
+                    </div>
+                <!--END CONSTITUTION STAT-->
+
+
+                <!--START CHARISMA STAT-->
+                    <div class="flex justify-between ml-2 mb-2 stat-button ">
+                    <h3 class="charisma">Charisma</h3> 
+                    </div>
+
+                    <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                        <!--THIS IS WHERE BONSUSES GO-->
+                        <p>this is where your bonuses go</p>
+                    </div>
+
+                    <!--DICE INSERT-->
+                    <div class="container border border-danger rounded stat-button">
+                        <p>this is where your dice go</p>
+                    </div>
+                <!--END CHARISMA STAT-->
+
+
+            </section>
+            <!--END CHARACTER STAT CARDS-->
+
+
+        </nav>
+        <!--END CHARACTER STATS-->
+
+
+<!--------------------------------------------------------------------------------COLUMN #2-------------------------------------------------------------------------------->
+        <!--BEGINNING DICE TRAY + CHARACTER IMAGE-->
+        <article class="col-4">
+            <div>
                 <div class="row">
                     <!--Dice Pool-->
-                    
-                    <div class="border-black border-2 justify-center mb-6 shadow-lg	 shadow-black"><img src="../img/dice/dicetray_4.png" alt="Dice Tray">
-                      
-                     <!--Draggable Dice go here-->
-                        </ul> 
-                        
-
-
+                    <div class="container border-black border-2 justify-center mb-6 shadow-lg shadow-black"><img src="../img/dice/dicetray_4.png" alt="Dice Tray">
+                    <!--Draggable Dice go here-->
                     </div>
-                  
-                        </div>
+                </div>
 
-                        <div img = src></div>
-
-                        <!--CHARACTER IMAGE INSERT-->
-                        <div class="col-4 border border-danger rounded">
-                        </div>
-                    </div>
-                    <div> 
-                    <div flex-row>
-                        <div class="border-black border-2 shadow-2xl shadow-black justify-center">
-                        
+                    <!--CHARACTER IMAGE INSERT-->
+                <div flex-row>
+                    <div class="border-black border-2 shadow-2xl shadow-black justify-center">
                         <img src="/public/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300" height="300">
                     </div>
                 </div>
-            </article>
-
-            <div class=" saved_characters border border-black border-solid border-2 h-400px w-800px">
-                <p> Saved Characters</p>
-                <!-- saved characters, load to right hand side-->
-                
             </div>
-        </section>
+        </article>
+        <!--END DICE TRAY + CHARACTER IMAGE-->
 
-    </content>
+<!--------------------------------------------------------------------------------COLUMN #3-------------------------------------------------------------------------------->
+        <!--BEGINNING LOAD CHARACTER TRAY-->
+        <div class=" saved_characters border border-black border-solid border-2 h-400px w-800px">
+            <p> Saved Characters</p>
+        </div>
+        <!--END LOAD CHARACTER TRAY-->
 
-    <!--Footer-->
-    <footer class="border border-danger rounded">
-        <!--Insert Copyright-->
+    </section>
+    
+<!----------------------------------------------------------------------------COPYRIGHT + LINKS---------------------------------------------------------------------------->
+    <!--BEGINNING FOOTER-->
+    <footer class="border  rounded">
         <a class="text-light ml-2"src="https://company.wizards.com/en/legal/fancontentpolicy">Wizards of the Coast Fan Content Policy</a>
     </footer>
+    <!--END FOOTER-->
     
 </body>
 </html>
