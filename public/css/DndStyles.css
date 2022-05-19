@@ -1,0 +1,53 @@
+body{
+    margin-left: 2%;
+    margin-right: 2%;
+    color: rgb(4, 2, 0);
+    }
+
+.nav-buttons{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.strength{
+color: rgb(4, 0, 0);
+}
+
+.intelligence{
+color: rgb(0, 0, 5);
+}
+
+.wisdom{
+color: rgb(0, 5, 5);
+}
+
+.dexterity{
+color: rgb(0, 4, 0);
+}
+
+.constitution{
+color: rgb(4, 4, 0);
+}
+
+.charisma{
+color: rgb(6, 0, 6)
+}
+
+.stat-button {
+    margin: 0.5%;
+}
+
+.backgound {
+
+    color: rgb(9, 5, 0);
+}
+
+header  {
+    color: rgb(5, 0, 1);
+}
+
+.saved_characters {
+    border: black
+
+}
+ 

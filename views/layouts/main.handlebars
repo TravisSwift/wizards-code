@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons and Dragons Character Generator</title>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'BIZ UDMincho', serif;
+        }
+    </style>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="/css/DndStyles.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark   bg-gradient">
+    <!--Title-->
+    <header>
+        <h1 class="text-light text-decoration-underline">Dungeons and Dragons Character Generator</h1>
+
+        <!--Navigation Bar-->
+        <nav>
+            <div class="row border border-danger rounded">
+                <div class="col-3 nav-buttons">
+                    <a href="/learnmore" class="text-light">Learn More</a>
+                </div>
+
+                <div class="col-3 nav-buttons">
+                    <a href="/" class="text-light">Character Sheet Generator</a>
+                </div>
+                <div class="col-3 nav-buttons">
+                    <a href="/login" class="text-light">Sign Up/Login</a>
+                </div>
+                <button id="logout" class="btn-no-style">Logout</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {{{ body }}}
+    </main>
+    <!--Footer-->
+    <footer class="border border-danger rounded">
+        <!--Insert Copyright-->
+        <a class="text-light" src="https://company.wizards.com/en/legal/fancontentpolicy">Wizards of the Coast Fan
+            Content Policy</a>
+        <p><strong>Dungeons & Dragons Character Generator</strong> by <a href="https://travisswift.github.io/portfolio/">Travis Swift</a>, <a
+                href="https://sacylkowski.github.io/my-portfolio/">Sarah Cylkowski</a>, <a href="">Alexander Lu</a>, <a
+                href="">Erik Rockenmeyer</a>, and <a href="">Stephen Fike</a>.</p>
+    </footer>
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>
