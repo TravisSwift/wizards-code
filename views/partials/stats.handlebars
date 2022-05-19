@@ -1,0 +1,237 @@
+<!--Character Creation-->
+    <content>
+        
+
+        <!--Character Stats Section-->
+        <section>
+            <nav>
+                <div class="row">
+                    <!--Enter Character Name-->
+                    <div class="col-4">
+                        <label class="text-light">Character Name</label><input type="text" name="character-name">
+                    </div>
+
+                    <div class="col-8">
+                        <div class="row">
+
+                            <!--Class Selection-->
+                            <div class="col-4">
+                                <!--Primary Class-->
+                                <div>
+                                    <select name="Primary Class">
+                                        <option value="none" selected disabled hidden>Select a Primary Class</option>
+                                        <option value="Warrior">Barbarian</option>
+                                        <option value="Bard">Bard</option>
+                                        <option value="Cleric">Cleric</option>
+                                        <option value="Druid">Druid</option>
+                                        <option value="Fighter">Fighter</option>
+                                        <option value="Monk">Monk</option>
+                                        <option value="Paladin">Paladin</option>
+                                        <option value="Ranger">Ranger</option>
+                                        <option value="Rogue">Rogue</option>
+                                        <option value="Sorcerer">Sorcerer</option>
+                                        <option value="Warlock">Warlock</option>
+                                        <option value="Wizard">Wizard</option>
+                                        <option value="Artificer">Artificer</option>
+                                        <option value="Blood-Hunter">Blood Hunter</option>
+                                    </select>
+                                </div>
+
+                                <!--Secondary Class-->
+                                <div>
+                                    <select name="Secondary Class">
+                                        <option value="none" selected disabled hidden>Select a Secondary Class</option>
+                                        <option value="Warrior">Barbarian</option>
+                                        <option value="Bard">Bard</option>
+                                        <option value="Cleric">Cleric</option>
+                                        <option value="Druid">Druid</option>
+                                        <option value="Fighter">Fighter</option>
+                                        <option value="Monk">Monk</option>
+                                        <option value="Paladin">Paladin</option>
+                                        <option value="Ranger">Ranger</option>
+                                        <option value="Rogue">Rogue</option>
+                                        <option value="Sorcerer">Sorcerer</option>
+                                        <option value="Warlock">Warlock</option>
+                                        <option value="Wizard">Wizard</option>
+                                        <option value="Artificer">Artificer</option>
+                                        <option value="Blood-Hunter">Blood Hunter</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!--Level-->
+                            <div class="col-4">
+                                <label class="text-light">Level</label><input type="number" name="Level" min="0">
+                            </div>
+
+                            <!--Hit Points-->
+                            <div class="col-4">
+                                <label class="text-light">Hit Points</label><input type="number" name="Hit Points" min="0">
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <!--Race-->
+                            <div class="col-4">
+                                <select name="Race">
+                                    <option value="none" selected disabled hidden>Select a Race</option>
+                                    <option value="Dragonborn">Dragonborn</option>
+                                    <option value="Dwarf">Dwarf</option>
+                                    <option value="Elf">Elf</option>
+                                    <option value="Gnome">Gnome</option>
+                                    <option value="Half-Elf">Half-Elf</option>
+                                    <option value="Halfling">Halfling</option>
+                                    <option value="Half-Orc">Half-Orc</option>
+                                    <option value="Human">Human</option>
+                                    <option value="Tiefling">Tiefling</option>
+                                </select>
+                            </div>
+
+                            <!--Augment-->
+                            <div class="col-4">
+                                <label class="text-light">Augment</label><input type="number" name="Hit Points" min="0">
+                            </div>
+
+                            <!--Armor Class-->
+                            <div class="col-4">
+                                <label class="text-light">Armor Class</label><input type="number" name="Hit Points" min="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Character Stats-->
+            <article>
+
+                <div class="row">
+                    <!--Dice Pool-->
+                    <div class="border border-danger rounded">
+                        <h2 class="text-light">Dice Tray</h2>
+                        <ul class="dice-tray border border-danger rounded">
+                            <!--Draggable Dice go here-->
+                        </ul>
+                    </div>
+
+                    <!--Character Stat Cards-->
+                    <div class="row">
+                        <div class="col-8">
+                            <!--Strength Stat-->
+                            <div class="row">
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <h3 class="strength">Strength</h3>
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <!--THIS IS WHERE BONSUSES GO-->
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <ul>
+                                        <!--Drag your dice into here-->
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                            <!--Intelligence Stat-->
+                            <div class="row">
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <h3 class="intelligence">Intelligence</h3>
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <!--THIS IS WHERE BONSUSES GO-->
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <ul>
+                                        <!--Drag your dice into here-->
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                            <!--Wisdom Stat-->
+                            <div class="row">
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <h3 class="wisdom">Wisdom</h3>
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <!--THIS IS WHERE BONSUSES GO-->
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <ul>
+                                        <!--Drag your dice into here-->
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                            <!--Dexterity Stat-->
+                            <div class="row">
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <h3 class="dexterity">dexterity</h3>
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <!--THIS IS WHERE BONSUSES GO-->
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <ul>
+                                        <!--Drag your dice into here-->
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                            <!--Constitution Stat-->
+                            <div class="row">
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <h3 class="constitution">Constitution</h3>
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <!--THIS IS WHERE BONSUSES GO-->
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <ul>
+                                        <!--Drag your dice into here-->
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                            <!--Charisma Stat-->
+                            <div class="row">
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <h3 class="charisma">Charisma</h3>
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <!--THIS IS WHERE BONSUSES GO-->
+                                </div>
+
+                                <div class="col-3 border border-danger rounded stat-button">
+                                    <ul>
+                                        <!--Drag your dice into here-->
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+
+                        <!--CHARACTER IMAGE INSERT-->
+                        <div class="col-4 border border-danger rounded">
+                        </div>
+                    </div>
+
+            </article>
+        </section>
+    </content>
