@@ -1,0 +1,255 @@
+[33mcommit 4fa130a071eedc32ecb67d49c6458457ebaa4c23[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Merge: da697d8 c57a1f1
+Author: Travis Swift <travis.arthur.swift@gmail.com>
+Date:   Wed May 18 19:19:34 2022 -0500
+
+    Merge branch 'feature/moretailwind', remote-tracking branch 'origin' into develop
+
+[33mcommit c57a1f16fb5771537abfdadf8749035a13133f33[m[33m ([m[1;31morigin/feature/moretailwind[m[33m, [m[1;32mfeature/moretailwind[m[33m)[m
+Author: Travis Swift <travis.arthur.swift@gmail.com>
+Date:   Wed May 18 19:18:50 2022 -0500
+
+    final push
+
+[33mcommit e5d8fd81f908f6c8c5fe46afa3c28678ce5f2955[m
+Author: Travis Swift <travis.arthur.swift@gmail.com>
+Date:   Wed May 18 19:17:20 2022 -0500
+
+    final push
+
+[33mcommit 6f16e59aabe6368e8b07e9dfb61a9162d2f0d0d5[m
+Author: Travis Swift <travis.arthur.swift@gmail.com>
+Date:   Wed May 18 18:18:56 2022 -0500
+
+    everything is aligned properly!
+
+[33mcommit a05d4f5ce6afa3e7839d2a93fc1d19157b06568a[m
+Author: Travis Swift <travis.arthur.swift@gmail.com>
+Date:   Wed May 18 17:37:12 2022 -0500
+
+    formatted tailwind
+
+[33mcommit 7d13d7dac3d7fd4aa04ff73161009174b0a27ff6[m
+Merge: c272080 3c35814
+Author: Travis Swift <96952755+TravisSwift@users.noreply.github.com>
+Date:   Tue May 17 20:39:27 2022 -0500
+
+    Merge pull request #32 from TravisSwift/feature/tailwind
+    
+    Feature/tailwind
+
+[33mcommit 3c35814c67e14682eb62c6c4aeaec48e322f66ff[m[33m ([m[1;31morigin/feature/tailwind[m[33m, [m[1;32mfeature/tailwind[m[33m)[m
+Author: Travis Swift <travis.arthur.swift@gmail.com>
+Date:   Tue May 17 20:31:50 2022 -0500
+
+    final branch push
+
+[33mcommit c272080105f02716081a7ac8712ba18252834d35[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Tue May 17 20:30:52 2022 -0500
+
+    fixed handlebars
+
+[33mcommit 5953b5beb12bbc7c215c8194e9f9bc09f40785e7[m
+Author: Travis Swift <travis.arthur.swift@gmail.com>
+Date:   Tue May 17 20:10:45 2022 -0500
+
+    added tailwind and picures
+
+[33mcommit 680e22b9f9998b44f9baabce9f45517048560826[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Tue May 17 19:15:13 2022 -0500
+
+    adjusted route
+
+[33mcommit d4a372149f1a0d3d0fccbcc79cd90a2d1cd68798[m[33m ([m[1;31morigin/feature/routes[m[33m)[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Tue May 17 14:34:59 2022 -0500
+
+    added handlebars to server file
+
+[33mcommit 498985a5f853a654524686b83b73b82c410d5da0[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Tue May 17 14:27:07 2022 -0500
+
+    server connected to styling
+
+[33mcommit ff99657c41c543889b3933ab8a00893ffc8591fb[m
+Merge: 2440ce2 8fcc35e
+Author: alu1868 <alu1868@gmail.com>
+Date:   Mon May 16 20:28:43 2022 -0500
+
+    Merge branch 'develop' of github.com:TravisSwift/wizards-code into develop
+
+[33mcommit 2440ce22cbec641df34f7a954795b09522a984ca[m
+Merge: 4287e20 3d0e936
+Author: alu1868 <alu1868@gmail.com>
+Date:   Mon May 16 20:28:11 2022 -0500
+
+    fixed merge conflicts
+
+[33mcommit 3d0e9365b402bc2f34f38b4664b5cfeaa5b243c0[m[33m ([m[1;31morigin/feature/views[m[33m)[m
+Author: alu1868 <alu1868@gmail.com>
+Date:   Mon May 16 20:23:59 2022 -0500
+
+    added signup/login screen
+
+[33mcommit 8fcc35e4c597314a1785d8da46eac26e9e83136d[m
+Merge: 2596027 78d3815
+Author: Erik Rockenmeyer <94813971+erockenmeyer@users.noreply.github.com>
+Date:   Mon May 16 20:22:27 2022 -0500
+
+    Merge pull request #30 from TravisSwift/feature/database-creation-MAC
+    
+    Feature/database creation mac
+
+[33mcommit da697d8c29f1e8af49ca51b4a35c82aff42ceab8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 6c127e8 57dd115
+Author: Erik Rockenmeyer <94813971+erockenmeyer@users.noreply.github.com>
+Date:   Mon May 16 20:22:04 2022 -0500
+
+    Merge pull request #28 from TravisSwift/feature/routes
+    
+    Feature/routes
+
+[33mcommit 78d3815ba5a06022891d51ed75289e48142c3ee5[m[33m ([m[1;31morigin/feature/database-creation-MAC[m[33m)[m
+Author: Stephen Fike <sfike98@gmail.com>
+Date:   Mon May 16 20:06:09 2022 -0500
+
+    fixed formatting
+
+[33mcommit e373841047ff09d9c4054182f46cd64a1fd327f3[m
+Author: alu1868 <alu1868@gmail.com>
+Date:   Mon May 16 17:02:42 2022 -0500
+
+    converted to handlebars
+
+[33mcommit 2596027ae1e017550cc2279c28bb6ae757a66bee[m
+Merge: 6af03d5 57dd115
+Author: Sarah Cylkowski <98064446+sacylkowski@users.noreply.github.com>
+Date:   Mon May 16 16:58:46 2022 -0500
+
+    Merge pull request #29 from TravisSwift/feature/routes
+    
+    Feature/routes
+
+[33mcommit 57dd1153bc1d0935035a5b4718b521cbeea218c4[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Mon May 16 16:54:20 2022 -0500
+
+    updated character routes
+
+[33mcommit b7ef48d2096a7c73bcb1e7d4c506e5de36f004bc[m
+Author: alu1868 <alu1868@gmail.com>
+Date:   Sun May 15 23:27:08 2022 -0500
+
+    updated html template
+
+[33mcommit b66fbc1a39588c8869a46429698398177a40568d[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Sun May 15 21:39:20 2022 -0500
+
+    fixed signup route
+
+[33mcommit c17dd68f98fbaaf652572d85e530b49272e0a497[m
+Author: alu1868 <alu1868@gmail.com>
+Date:   Sun May 15 04:18:08 2022 -0500
+
+    linked style sheet switched to skeleton
+
+[33mcommit 8462e2ce57e0a76ba1f0e156cc9412d99d35ed2e[m
+Author: alu1868 <alu1868@gmail.com>
+Date:   Sat May 14 17:41:27 2022 -0500
+
+    fixed mainpage
+
+[33mcommit b94a3d758a27852187cf090757481fe3839ccc81[m
+Author: alu1868 <alu1868@gmail.com>
+Date:   Sat May 14 12:37:43 2022 -0500
+
+    changed file locations
+
+[33mcommit 6af03d556248f5cbd1f0e3b061bdfe390056b0b7[m
+Merge: 077281d 9c765b9
+Author: Sarah Cylkowski <98064446+sacylkowski@users.noreply.github.com>
+Date:   Sat May 14 11:06:08 2022 -0500
+
+    Merge pull request #27 from TravisSwift/feature/routes
+    
+    edited routes
+
+[33mcommit 9c765b9a322c58930b1dea5889c76c3138f9b39d[m
+Merge: f671021 077281d
+Author: Sarah Cylkowski <98064446+sacylkowski@users.noreply.github.com>
+Date:   Sat May 14 11:06:01 2022 -0500
+
+    Merge branch 'develop' into feature/routes
+
+[33mcommit f671021aa353703c65dc33bc3a217dd75392e468[m
+Merge: fa7b605 727865a
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Sat May 14 11:00:41 2022 -0500
+
+    edited routes
+
+[33mcommit 077281dc16e9da0a51400db52cc61b99cc505afa[m
+Merge: b58146c c5e5586
+Author: Erik Rockenmeyer <94813971+erockenmeyer@users.noreply.github.com>
+Date:   Sat May 14 10:49:02 2022 -0500
+
+    Merge pull request #26 from TravisSwift/feature/calculations
+    
+    Feature/calculations
+
+[33mcommit c5e558662180d14c20393e6c1ea72fb7c877e9fe[m[33m ([m[1;31morigin/feature/calculations[m[33m)[m
+Author: erockenmeyer <erikrockenmeyer@gmail.com>
+Date:   Sat May 14 10:41:09 2022 -0500
+
+    changed skills and proficiency to be DRY
+
+[33mcommit 8bb50b78a91a43b832467cb1b62867791446a3d2[m
+Author: erockenmeyer <erikrockenmeyer@gmail.com>
+Date:   Sat May 14 10:37:35 2022 -0500
+
+    moved dice skills and stats, added armor class and hit point calcs
+
+[33mcommit b58146c2c9168f8b8234c19b97b0849a9e20b17b[m
+Merge: 727865a fa7b605
+Author: Sarah Cylkowski <98064446+sacylkowski@users.noreply.github.com>
+Date:   Fri May 13 15:03:03 2022 -0500
+
+    Merge pull request #25 from TravisSwift/feature/routes
+    
+    Feature/routes
+
+[33mcommit fa7b60524f84ba1313b9457df54e82c9afe53528[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Fri May 13 15:00:01 2022 -0500
+
+    fixed routes
+
+[33mcommit 6c6c63581f78a57bfe8c54bc76751eb2be77cea9[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Fri May 13 13:28:32 2022 -0500
+
+    fixed login code
+
+[33mcommit fd021bd27bdd73c261c75a667a5495662e73e216[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Fri May 13 11:26:40 2022 -0500
+
+    all get and post routes working
+
+[33mcommit 1b8c17b2389e1a3c3a72bff8c09c552e4134ea6c[m
+Author: Stephen Fike <sfike98@gmail.com>
+Date:   Fri May 13 09:59:09 2022 -0500
+
+    changed sequelize conneciton from localhost to 127.0.0.1
+
+[33mcommit ed61592e027904b75643936c655667598dfa7e2a[m
+Author: sacylkowski <sacylkowski@gmail.com>
+Date:   Thu May 12 20:48:18 2022 -0500
+
+    updated user and character routes
+
+[33mcommit 769161df07c3ab467b67276179f5290094b1b7d9[m[33m ([m[1;31morigin/feature/database-c
