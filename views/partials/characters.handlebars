@@ -1,0 +1,14 @@
+<section>
+<!--BEGINNING LOAD CHARACTER TRAY-->
+<div class=" saved_characters border border-black border-solid border-2 h-400px w-800px">
+    <h2> Saved Characters</h2>
+    <ol>
+    {{#each characters as |character|}}
+    <li>
+    <a href="/characters/{{id}}" target="_blank">{{name}}</a>
+    </li>
+    {{/each}}
+    </ol>
+</div>
+<!--END LOAD CHARACTER TRAY-->
+</section>
