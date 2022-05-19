@@ -18,7 +18,7 @@
                             <div class="col-4">
                                 <!--Primary Class-->
                                 <div>
-                                    <select name="Primary Class">
+                                    <select name="Primary Class" id="class">
                                         <option value="none" selected disabled hidden>Select a Primary Class</option>
                                         <option value="Warrior">Barbarian</option>
                                         <option value="Bard">Bard</option>
@@ -37,7 +37,7 @@
                                     </select>
                                 </div>
 
-                                <!--Secondary Class-->
+                                <!--Secondary Class
                                 <div>
                                     <select name="Secondary Class">
                                         <option value="none" selected disabled hidden>Select a Secondary Class</option>
@@ -57,23 +57,23 @@
                                         <option value="Blood-Hunter">Blood Hunter</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <!--Level-->
                             <div class="col-4">
-                                <label class="text-light">Level</label><input type="number" name="Level" min="0">
+                                <label class="text-light">Level</label><input type="number" name="Level" min="0" id="level">
                             </div>
 
                             <!--Hit Points-->
                             <div class="col-4">
-                                <label class="text-light">Hit Points</label><input type="number" name="Hit Points" min="0">
+                                <label class="text-light">Hit Points</label><input type="number" name="Hit Points" min="0" id="hit-points">
                             </div>
                         </div>
                     
                         <div class="row">
                             <!--Race-->
                             <div class="col-4">
-                                <select name="Race">
+                                <select name="Race" id="race">
                                     <option value="none" selected disabled hidden>Select a Race</option>
                                     <option value="Dragonborn">Dragonborn</option>
                                     <option value="Dwarf">Dwarf</option>
@@ -94,7 +94,7 @@
 
                             <!--Armor Class-->
                             <div class="col-4">
-                                <label class="text-light">Armor Class</label><input type="number" name="Hit Points" min="0">
+                                <label class="text-light">Armor Class</label><input type="number" name="Hit Points" min="0" id="armor-class">
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                                 </div>
 
                                 <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
+                                    <ul id="strength">
                                         <!--Drag your dice into here-->
                                     </ul>
                                 </div>
@@ -145,7 +145,7 @@
                                 </div>
 
                                 <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
+                                    <ul id="intelligence">
                                         <!--Drag your dice into here-->
                                     </ul>
                                 </div>
@@ -163,7 +163,7 @@
                                 </div>
 
                                 <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
+                                    <ul id="wisdom">
                                         <!--Drag your dice into here-->
                                     </ul>
                                 </div>
@@ -181,7 +181,7 @@
                                 </div>
 
                                 <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
+                                    <ul id="dexterity">
                                         <!--Drag your dice into here-->
                                     </ul>
                                 </div>
@@ -199,7 +199,7 @@
                                 </div>
 
                                 <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
+                                    <ul id="constitution">
                                         <!--Drag your dice into here-->
                                     </ul>
                                 </div>
@@ -217,7 +217,7 @@
                                 </div>
 
                                 <div class="col-3 border border-danger rounded stat-button">
-                                    <ul>
+                                    <ul id="charisma">
                                         <!--Drag your dice into here-->
                                     </ul>
                                 </div>

@@ -10,17 +10,17 @@ const saveBtnHandler = (event) => {
 
     // grab info
     character.name;
-    character.class;
-    character.strength;
-    character.dexterity;
-    character.constitution;
-    character.intelligence;
-    character.wisdom;
-    character.charisma;
-    character.race;
-    character.hit_points;
-    character.armor_class;
-    character.level;
+    character.class = document.getElementById("class").value;
+    character.strength = document.getElementById("strength").value;
+    character.dexterity = document.getElementById("dexterity").value;
+    character.constitution = document.getElementById("constitution").value;
+    character.intelligence = document.getElementById("intelligence").value;
+    character.wisdom = document.getElementById("wisdom").value;
+    character.charisma = document.getElementById("charisma").value;
+    character.race = document.getElementById("race").value;
+    character.hit_points = document.getElementById("hit-points").value;
+    character.armor_class = document.getElementById("armor-class").value;
+    character.level = document.getElementById("level").value;
 
     // send object to fetch request handler
     saveFetch(character);
