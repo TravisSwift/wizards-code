@@ -1,5 +1,6 @@
 async function loginForm(event) {
     event.preventDefault();
+    console.log("You're logged in!");
 
     // grabbing the data from the form
     const email = document.querySelector("#email-login").value.trim();
@@ -26,6 +27,7 @@ async function loginForm(event) {
 
 async function signupForm(event) {
     event.preventDefault();
+    console.log("You've signed up!");
 
     // grabbing the data from the form
     const username = document.querySelector("#username-signup").value.trim();
@@ -54,3 +56,4 @@ async function signupForm(event) {
 document.querySelector(".login-form").addEventListener("submit", loginForm);
 
 document.querySelector(".signup-form").addEventListener("submit", signupForm);
+
