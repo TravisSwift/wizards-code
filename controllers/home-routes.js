@@ -80,11 +80,11 @@ router.get("/character/:id", (req, res) => {
         }
   
         // serialize the data
-        const characters = dbCharacterData.get({ plain: true });
+        const character = dbCharacterData.get({ plain: true });
   
         // pass data to template
         res.render("single-character", {
-          characters,
+          character,
           loggedIn: req.session.loggedIn
         });
       })

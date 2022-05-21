@@ -1,21 +1,6 @@
 // html ids
 const loadBtn = document.getElementById("load-character");
 
-// get list of user's characters
-const getCharList = () => {
-    // using user id, make fetch request
-}
-
-// show the list on the page
-const showCharList = (arr) => {
-    // iterate through array of characters
-    for (let i = 0; i < arr.length; i++) {
-        // create li elements to populate ul
-
-        // set character id to the element
-    }
-}
-
 // load button handler (receive character)
 const loadBtnHandler = (event) => {
     event.preventDefault();
