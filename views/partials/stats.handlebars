@@ -1,32 +1,3 @@
-<!--CHARACTER CREATION-->
-<content>
-
-
-    <!--BEGINNING GENERATOR BUTTONS-->
-    <section class="row">
-        <div class="row border border-danger rounded ml-2 mr-2 mb-2 flex justify-center border-2 border-black  md:text-3xl">
-            <div class="col-4 ml-10">
-                <div>
-                    <button class="content-between ml-10 mr-10">Roll Stats</button>
-                </div>
-            </div>
-            {{#if loggedIn}}
-            <div class="col-4">
-                <button class="content-between ml-10 mr-10">Save Character</button>
-            </div>
-
-            <div class="col-4">
-                <button class="content-between ml-10 mr-10">Load Character</button>
-            </div>
-            {{else}}
-            <p>Must be logged in to save characters</p>
-            {{/if}}
-        </div>
-
-    </section>
-    <!--END GENERATOR BUTTONS-->
-</content>
-
 <!-----------------------------------------------------------------------------CHARACTER STATS----------------------------------------------------------------------------->
 <section class="flex flex-none justify-around content-center">
     <!--------------------------------------------------------------------------------COLUMN #1-------------------------------------------------------------------------------->
@@ -129,19 +100,20 @@
         <br>
 
         <!--------------------------------------------------------------------------------DICE STATS-------------------------------------------------------------------------------->
-        
-            <article class="col-4">
-        <div>
-            <div class="row">
-                <!--Dice Pool-->
-                <div class="container mb-6 mr-2 bg-auto bg-center bg-no-repeat text-center" style="background-image: url(/img/dice/dicetray_4.png)">
-                    <!--Draggable Dice go here-->
-                    <div id="dice-tray" class="inline-flex object-center"></div>
-                </div>
-            </div>
 
-        </div>
-    </article>
+        <article class="col-4">
+            <div>
+                <div class="row">
+                    <!--Dice Pool-->
+                    <div class="container mb-6 mr-2 bg-auto bg-center bg-no-repeat text-center"
+                        style="background-image: url(/img/dice/dicetray_4.png)">
+                        <!--Draggable Dice go here-->
+                        <div id="dice-tray" class="inline-flex object-center"></div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
         <!--START CHARACTER STAT CARDS-->
         <section class=" grid grid-cols-3 gap-4">
 
@@ -194,7 +166,7 @@
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="dex">this is where your bonuses go</p> --}}
-                <p id="dex"></p> 
+                <p id="dex"></p>
             </div>
             <!--END DEXTERITY STAT-->
 
@@ -213,7 +185,7 @@
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="con">this is where your bonuses go</p> --}}
-               <p id="con"></p> 
+                <p id="con"></p>
 
             </div>
             <!--END CONSTITUTION STAT-->
@@ -236,7 +208,7 @@
                 <!--THIS IS WHERE BONSUSES GO-->
 
                 {{!-- <p id="int">this is where your bonuses go</p> --}}
-                <p id="int"></p> 
+                <p id="int"></p>
 
             </div>
             <!--END INTELLIGENCE STAT-->
@@ -260,7 +232,7 @@
                 <!--THIS IS WHERE BONSUSES GO-->
 
                 {{!-- <p id="wis">this is where your bonuses go</p> --}}
-                <p id="wis"></p> 
+                <p id="wis"></p>
             </div>
             <!--END WISDOM STAT-->
 
@@ -280,7 +252,7 @@
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="cha">this is where your bonuses go</p> --}}
-                <p id="cha"></p> 
+                <p id="cha"></p>
             </div>
             <!--END CHARISMA STAT-->
 
@@ -292,25 +264,24 @@
     </nav>
     <!--END CHARACTER STATS-->
 
-<br>
+    <br>
     <!--------------------------------------------------------------------------------COLUMN #2-------------------------------------------------------------------------------->
     <!--BEGINNING DICE TRAY + CHARACTER IMAGE-->
     <article>
-        {{!-- <div>
-            <div class="row">
-                <!--Dice Pool-->
-
-                    <!--Draggable Dice go here-->
-                </div>
-            </div> --}}
-
-            <!--CHARACTER IMAGE INSERT-->
-            <div flex-row >
-                <div class="hidden border-black border-2 mr-2 justify-center content-center lg:block mr-8 mt-10q">
-                    <img src="/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300"
-                        height="300">
-                </div>
+        <!--CHARACTER IMAGE INSERT-->
+        <div>
+            <div class="hidden border-black border-2 mr-2 justify-center content-center lg:block mr-8 mt-10q">
+                <img src="/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300" height="300">
             </div>
         </div>
     </article>
     <!--END DICE TRAY + CHARACTER IMAGE-->
+    <script src="/javascript/stats.js"></script>
+    <script src="/javascript/draggable.js"></script>
+    <script src="/javascript/save.js"></script>
+
+</section>
+
+{{#if loggedIn}}
+{{> characters}}
+{{/if}}
