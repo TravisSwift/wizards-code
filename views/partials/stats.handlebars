@@ -28,7 +28,7 @@
 </content>
 
 <!-----------------------------------------------------------------------------CHARACTER STATS----------------------------------------------------------------------------->
-<section class="flex justify-between">
+<section class="flex flex-nowrap justify-between">
     <!--------------------------------------------------------------------------------COLUMN #1-------------------------------------------------------------------------------->
     <!--BEGINNING CHARACTER STATS-->
     <nav class="col-4 border-black">
@@ -42,7 +42,7 @@
             </div>
 
             <!--START CLASS-->
-            <div class=" ml-4 mt-2 flex justify-between">
+            <div class=" flex flex=col ml-4 mt-2 flex justify-between mr-2">
                 <label class="text-light ">Primary Class</label>
                 <select name="Primary Class">
                     <option value="Warrior">Barbarian</option>
@@ -119,18 +119,20 @@
 
 
             <!--START ARMOR CLASS-->
-            <div class="col-4 flex justify-between ml-2">
+            <div class="col-4 flex justify-between ml-2 mt-2 mb-2">
                 <label class="text-light">Armor Class</label>
                 <input type="number" name="Hit Points" min="0">
             </div>
             <!--END ARMOR CLASS-->
         </section>
 
+        <br>
+
         <!--------------------------------------------------------------------------------DICE STATS-------------------------------------------------------------------------------->
         <!--START CHARACTER STAT CARDS-->
         <section class=" grid grid-cols-3 gap-4">
 
-
+        
             <!--START STRENGTH STAT-->
             <div class="flex justify-between ml-2 mb-2 stat-button ">
                 <h3 class="strength">Strength</h3>
@@ -247,8 +249,8 @@
         <div>
             <div class="row">
                 <!--Dice Pool-->
-                <div class="container border-black border-2 justify-center mb-6 shadow-lg shadow-black"><img
-                        src="../../public/img/dice/dicetray_4.png" alt="Dice Tray">
+                <div class="container overflow-hidden border-black border-2 justify-center mb-6 shadow-lg shadow-black"><img
+                        src="/img/dice/dicetray_4.png" alt="Dice Tray">
                     <!--Draggable Dice go here-->
                 </div>
             </div>
@@ -256,7 +258,7 @@
             <!--CHARACTER IMAGE INSERT-->
             <div flex-row>
                 <div class="hidden border-black border-2 justify-center lg:block">
-                    <img src="../../public/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300"
+                    <img src="/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300"
                         height="300">
                 </div>
             </div>
