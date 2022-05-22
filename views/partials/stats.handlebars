@@ -28,16 +28,16 @@
 </content>
 
 <!-----------------------------------------------------------------------------CHARACTER STATS----------------------------------------------------------------------------->
-<section class="flex flex-none justify-between">
+<section class="flex flex-none justify-around content-center">
     <!--------------------------------------------------------------------------------COLUMN #1-------------------------------------------------------------------------------->
     <!--BEGINNING CHARACTER STATS-->
     <nav class="col-4 border-black">
 
 
         <!--------------------------------------------------------------------------------INPUT STATS-------------------------------------------------------------------------------->
-        <section class="grid grid-cols-2 gap-4">
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <!--EnterCharacter Name-->
-            <div class="col-4 ml-2 flex space-x-4 ml-4">
+            <div class="col-4 ml-2 mb-2 mt-2 flex  justify-between">
                 <label class="text-light ">Character Name</label><input type="text" name="character-name" id="name">
             </div>
 
@@ -165,7 +165,7 @@
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
                 {{!-- <p id="strength">this is where your dice go</p> --}}
-                <input type="number" name="strength" id="strength">
+                <input class="h-full w-full" type="number" name="strength" id="strength">
             </div>
 
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
@@ -187,7 +187,7 @@
             <div class="container border border-danger rounded stat-button">
 
                 {{!-- <p id="dexterity">this is where your dice go</p> --}}
-                <input type="number" name="dexterity" id="dexterity">
+                <input class="h-full w-full" type="number" name="dexterity" id="dexterity">
 
             </div>
 
@@ -207,7 +207,7 @@
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
                 {{!-- <p id="constitution" class="stat">this is where your dice go</p> --}}
-                <input type="number" name="constitution" id="constitution">
+                <input class="h-full w-full" type="number" name="constitution" id="constitution">
             </div>
 
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
@@ -228,7 +228,7 @@
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
                 {{!-- <p id="intelligence" class="stat">this is where your dice go</p> --}}
-                <input type="number" name="intelligence" id="intelligence">
+                <input class="h-full w-full" type="number" name="intelligence" id="intelligence">
 
             </div>
 
@@ -252,7 +252,7 @@
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
                 {{!-- <p id="wisdom" class="stat">this is where your dice go</p> --}}
-                <input type="number" name="wisdom" id="wisdom">
+                <input class="h-full w-full" type="number" name="wisdom" id="wisdom">
 
             </div>
 
@@ -274,7 +274,7 @@
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
                 {{!-- <p id="charisma" class="stat">this is where your dice go</p> --}}
-                <input type="number" name="charisma" id="charisma">
+                <input class="h-full w-full" type="number" name="charisma" id="charisma">
             </div>
 
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
@@ -295,7 +295,7 @@
 <br>
     <!--------------------------------------------------------------------------------COLUMN #2-------------------------------------------------------------------------------->
     <!--BEGINNING DICE TRAY + CHARACTER IMAGE-->
-    <article class="col-4">
+    <article>
         {{!-- <div>
             <div class="row">
                 <!--Dice Pool-->
@@ -306,8 +306,8 @@
             </div> --}}
 
             <!--CHARACTER IMAGE INSERT-->
-            <div flex-row>
-                <div class="hidden border-black border-2 mr-2 justify-center lg:block">
+            <div flex-row >
+                <div class="hidden border-black border-2 mr-2 justify-center content-center lg:block mr-8 mt-10">
                     <img src="/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300"
                         height="300">
                 </div>
