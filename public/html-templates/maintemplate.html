@@ -61,7 +61,7 @@
     <!--BEGINNING BANNER-->
     <section>
         <div>
-            <img class="text-light border-2 border-black ml-2"src="../img/dnd-banner.jpg" alt="traveler on a horse entering the castle gates">
+            <img class="flex flex-col mb-2 space-y-2 md:w-1/2"src="../img/dnd-banner.jpg" alt="traveler on a horse entering the castle gates">
         </div>
 
         <!--How it works section/maybe some instructions-->
@@ -78,19 +78,19 @@
 
         <!--BEGINNING GENERATOR BUTTONS-->
         <section class="row">
-            <div class="row border border-danger rounded ml-2 mr-2 flex justify-center   text-3xl border-2 border-black">
+            <div class="row border border-danger rounded ml-2 mr-2 mb-2 flex justify-center border-2 border-black  md:text-3xl">
                 <div class="col-4 ml-10">
                     <div>
-                        <button class="content-between ml-10 mr-10">Roll Stats</button>
+                        <button class="content-between ml-2 mr-10">Roll Stats</button>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <button class="content-between ml-10 mr-10">Save Character</button>
+                    <button class="content-between ml-2 mr-10">Save Character</button>
                 </div>
 
                 <div class="col-4">
-                    <button class="content-between ml-10 mr-10">Load Character</button>
+                    <button class="content-between ml-0 mr-2">Load Character</button>
                 </div>
             </div>
 
@@ -106,9 +106,9 @@
 
 
     <!--------------------------------------------------------------------------------INPUT STATS-------------------------------------------------------------------------------->
-            <section class="grid grid-cols-2 gap-4">
+            <section class="flex grid grid-cols-2 gap-4 md-flex-col">
                 <!--EnterCharacter Name-->
-                <div class="col-4 ml-2 flex space-x-4 ml-4">
+                <div class="flex col-4 ml-2 flex space-x-4 ml-4 md-flex-col">
                     <label class="text-light ">Character Name</label><input type="text" name="character-name">
                 </div>
                         
@@ -163,7 +163,7 @@
                 
 
                 <!--START RACE-->
-                <div class="col- ml-2 mb-2 mt-2 flex justify-between">
+                <div class="col- ml-2 mb-2 mt-2 flex justify-between width: 150px">
                     <label class="text-light ">Select Race</label>
                     <select name="Race">
                         <option value="none" selected disabled hidden>Choose</option>
@@ -182,15 +182,15 @@
 
 
                 <!--START AUGMENT-->
-                <div class="col-4 flex justify-between ml-2 mb-2">
+                <!-- <div class="col-4 flex justify-between ml-2 mb-2">
                     <label class="text-light">Augment</label>
                     <input type="number" name="Hit Points" min="0">
-                </div>
+                </div> -->
                 <!--END AUGMENT-->
 
 
                 <!--START ARMOR CLASS-->
-                <div class="col-4 flex justify-between ml-2">
+                <div class="col-4 flex justify-between ml-2 mb-10">
                     <label class="text-light">Armor Class</label>
                     <input type="number" name="Hit Points" min="0">
                 </div>
@@ -203,18 +203,18 @@
 
 
                 <!--START STRENGTH STAT-->
-                    <div class="flex justify-between ml-2 mb-2 stat-button ">
+                    <div class="flex justify-between ml-2 mb-2 stat-button">
                     <h3 class="strength">Strength</h3>
                     </div>
 
                     <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                         <!--THIS IS WHERE BONSUSES GO-->
-                        <p>this is where your bonuses go</p>
+                        <p>Bonus</p>
                     </div>
 
                     <!--DICE INSERT-->
                     <div class="container border border-danger rounded stat-button">
-                        <p>this is where your dice go</p>
+                        <p>Dice</p>
                     </div>
                 <!--END STRENGTH STAT-->
 
@@ -226,12 +226,12 @@
 
                     <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                         <!--THIS IS WHERE BONSUSES GO-->
-                        <p>this is where your bonuses go</p>
+                        <p>Bonus</p>
                     </div>
 
                     <!--DICE INSERT-->
                     <div class="container border border-danger rounded stat-button">
-                        <p>this is where your dice go</p>
+                        <p>Dice</p>
                     </div>
                 <!--END INTELLIGENCE STAT-->
 
@@ -243,12 +243,12 @@
 
                     <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                         <!--THIS IS WHERE BONSUSES GO-->
-                        <p>this is where your bonuses go</p>
+                        <p>Bonus</p>
                     </div>
 
                     <!--DICE INSERT-->
                     <div class="container border border-danger rounded stat-button">
-                        <p>this is where your dice go</p>
+                        <p>Dice</p>
                     </div>
                 <!--END WISDOM STAT-->
 
@@ -260,12 +260,12 @@
 
                     <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                         <!--THIS IS WHERE BONSUSES GO-->
-                        <p>this is where your bonuses go</p>
+                        <p>Bonus</p>
                     </div>
 
                     <!--DICE INSERT-->
                     <div class="container border border-danger rounded stat-button">
-                        <p>this is where your dice go</p>
+                        <p>Dice</p>
                     </div>
                 <!--END DEXTERITY STAT-->
 
@@ -277,12 +277,12 @@
 
                     <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                         <!--THIS IS WHERE BONSUSES GO-->
-                        <p>this is where your bonuses go</p>
+                        <p>Bonus</p>
                     </div>
 
                     <!--DICE INSERT-->
                     <div class="container border border-danger rounded stat-button">
-                        <p>this is where your dice go</p>
+                        <p>Dice</p>
                     </div>
                 <!--END CONSTITUTION STAT-->
 
@@ -294,12 +294,12 @@
 
                     <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                         <!--THIS IS WHERE BONSUSES GO-->
-                        <p>this is where your bonuses go</p>
+                        <p>Bonus</p>
                     </div>
 
                     <!--DICE INSERT-->
                     <div class="container border border-danger rounded stat-button">
-                        <p>this is where your dice go</p>
+                        <p>Dice</p>
                     </div>
                 <!--END CHARISMA STAT-->
 
@@ -318,14 +318,14 @@
             <div>
                 <div class="row">
                     <!--Dice Pool-->
-                    <div class="container border-black border-2 justify-center mb-6 shadow-lg shadow-black"><img src="../img/dice/dicetray_4.png" alt="Dice Tray">
+                    <div class="container flex flex-col-reversem border-black border-2 justify-center mb-6"><img src="../img/dice/dicetray_4.png" alt="Dice Tray">
                     <!--Draggable Dice go here-->
                     </div>
                 </div>
 
                     <!--CHARACTER IMAGE INSERT-->
                 <div flex-row>
-                    <div class="border-black border-2 shadow-2xl shadow-black justify-center">
+                    <div class="hidden border-black border-2 justify-center lg:flex">
                         <img src="/public/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300" height="300">
                     </div>
                 </div>
