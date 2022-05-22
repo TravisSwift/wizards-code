@@ -35,8 +35,21 @@
    
     <!--Title-->
     <header>
-        <h1 class="text-light text-2xl ml-2 text-decoration-underline">Dungeons and Dragons Character Generator</h1>
+        <h1 class="text-2xl ml-2 text-decoration-underline text-center justify-items-center">Dungeons and Dragons Character Generator</h1>
         <!--header end tag?--->
+           <!--BEGINNING BANNER-->
+    <section>
+        <div class="flex justify-center">
+            <img class="text-light border-2 border-black" src="/img/Banner.jpg" alt="traveler on a horse entering the castle gates">
+        </div>
+
+        <!--How it works section/maybe some instructions-->
+        {{!-- <div>
+            <h2 class="text-light ml-2">Learn More</h2>
+            <p class="text-light text-black-600 border border-danger rounded ml-2">Welcome to our Dungeons and Dragons Character Generator. </p>
+        </div> --}}
+    </section>
+    <!--END BANNER-->
 
         <!--Navigation Bar-->
         <nav>
@@ -61,19 +74,6 @@
             </div>
         </nav>
     </header>
-        <!--BEGINNING BANNER-->
-    <section>
-        <div  class="flex block justify-center">
-            <img class="mb-2 space-y-2 md:w-1/2" src="/img/Banner.jpg" alt="traveler on a horse entering the castle gates">
-        </div>
-
-        <!--How it works section/maybe some instructions-->
-        <div>
-            <h2 class="text-light ml-2">Learn More</h2>
-            <p class="text-light text-black-600 border border-danger rounded ml-2">Welcome to our Dungeons and Dragons Character Generator. </p>
-        </div>
-    </section>
-    <!--END BANNER-->
 
     <main>
         {{{ body }}}
