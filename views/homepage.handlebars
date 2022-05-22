@@ -1,6 +1,34 @@
-<!--CHARACTER CREATION STATS-->
-{{> stats}}
+<!--CHARACTER CREATION-->
+<content>
 
-{{#if loggedIn}}
-{{> characters}}
-{{/if}}
+
+    <!--BEGINNING GENERATOR BUTTONS-->
+    <section class="row">
+        <div
+            class="row border border-danger rounded ml-2 mr-2 mb-2 flex justify-center border-2 border-black  md:text-3xl">
+            <div class="col-4 ml-10">
+                <div>
+                    <button class="content-between ml-10 mr-10" id="dice-btn">Roll Stats</button>
+                </div>
+            </div>
+            {{#if loggedIn}}
+            <div class="col-4">
+                <button class="content-between ml-10 mr-10" id="save-character">Save Character</button>
+            </div>
+
+            <div class="col-4">
+                <button class="content-between ml-10 mr-10">Load Character</button>
+            </div>
+            {{else}}
+            <p>Must be logged in to save characters</p>
+            {{/if}}
+        </div>
+
+    </section>
+    <!--END GENERATOR BUTTONS-->
+</content>
+
+<!--CHARACTER CREATION STATS-->
+<div class="grid grid-cols-3">
+    <div class="col-span-3 lg:col-span-2">{{> stats}}</div>
+</div>
