@@ -7,12 +7,12 @@
         <div class="row border border-danger rounded ml-2 mr-2 mb-2 flex justify-center border-2 border-black  md:text-3xl">
             <div class="col-4 ml-10">
                 <div>
-                    <button class="content-between ml-10 mr-10" id="dice-btn">Roll Stats</button>
+                    <button class="content-between ml-10 mr-10">Roll Stats</button>
                 </div>
             </div>
             {{#if loggedIn}}
             <div class="col-4">
-                <button class="content-between ml-10 mr-10" id="save-character">Save Character</button>
+                <button class="content-between ml-10 mr-10">Save Character</button>
             </div>
 
             <div class="col-4">
@@ -44,7 +44,7 @@
             <!--START CLASS-->
             <div class="col-4 ml-2 mb-2 mt-2 flex  justify-between">
                 <label class="text-light ">Primary Class</label>
-                <select name="Primary Class" id="class">
+                <select name="Primary Class">
                     <option value="Warrior">Barbarian</option>
                     <option value="Bard">Bard</option>
                     <option value="Cleric">Cleric</option>
@@ -70,7 +70,7 @@
                         <label class="text-light">Level</label>
                     </div>
                     <div class="col-8">
-                        <input type="number" name="Level" min="0" id="level">
+                        <input type="number" name="Hit Points" min="0">
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                         <label class="text-light">Hit Points</label>
                     </div>
                     <div class="col-8">
-                        <input type="number" name="Hit Points" min="0" id="hit-points">
+                        <input type="number" name="Hit Points" min="0">
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
             <!--START RACE-->
             <div class="col-4 ml-2 mb-2 mt-2 flex justify-between">
                 <label class="text-light ">Select Race</label>
-                <select name="Race" id="race">
+                <select name="Race">
                     <option value="none" selected disabled hidden>Choose</option>
                     <option value="Dragonborn">Dragonborn</option>
                     <option value="Dwarf">Dwarf</option>
@@ -121,7 +121,7 @@
             <!--START ARMOR CLASS-->
             <div class="col-4 flex justify-between ml-2 mt-2 mb-2">
                 <label class="text-light">Armor Class</label>
-                <input type="number" name="Armor-Class" min="0" id="armor-class">
+                <input type="number" name="Hit Points" min="0">
             </div>
             <!--END ARMOR CLASS-->
         </section>
@@ -299,15 +299,24 @@
         {{!-- <div>
             <div class="row">
                 <!--Dice Pool-->
+<<<<<<< HEAD
                 <div class="container justify-center mb-6 mr-2 h-24 min-h-full text-center" style="background-image: url(/img/dice/dicetray_4.png)">
+=======
+                <div class="container justify-center mb-6 mr-2 flex md:flex-col-reverse"><img
+                        src="/img/dice/dicetray_4.png" alt="Dice Tray">
+>>>>>>> 1dff68ff52a7e00606e4f9d67f5b54d2296f60bd
                     <!--Draggable Dice go here-->
-                    <div id="dice-tray" class="inline-flex object-center"></div>
                 </div>
             </div> --}}
 
             <!--CHARACTER IMAGE INSERT-->
+<<<<<<< HEAD
             <div flex-row >
                 <div class="hidden border-black border-2 mr-2 justify-center content-center lg:block mr-8 mt-10q">
+=======
+            <div flex-row>
+                <div class="hidden border-black border-2 mr-2 justify-center lg:block">
+>>>>>>> 1dff68ff52a7e00606e4f9d67f5b54d2296f60bd
                     <img src="/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300"
                         height="300">
                 </div>
@@ -315,6 +324,3 @@
         </div>
     </article>
     <!--END DICE TRAY + CHARACTER IMAGE-->
-    <script src="/javascript/stats.js"></script>
-    <script src="/javascript/draggable.js"></script>
-    <script src="/javascript/save.js"></script>
