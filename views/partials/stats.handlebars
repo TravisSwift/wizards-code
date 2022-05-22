@@ -129,10 +129,34 @@
         <br>
 
         <!--------------------------------------------------------------------------------DICE STATS-------------------------------------------------------------------------------->
+        
+            <article class="col-4">
+        <div>
+            <div class="row">
+                <!--Dice Pool-->
+                <div class="container mb-6 mr-2 bg-auto bg-center bg-no-repeat text-center" style="background-image: url(/img/dice/dicetray_4.png)">
+                    <!--Draggable Dice go here-->
+                    <div id="dice-tray" class="inline-flex object-center"></div>
+                </div>
+            </div>
+
+        </div>
+    </article>
         <!--START CHARACTER STAT CARDS-->
         <section class=" grid grid-cols-3 gap-4">
 
-        
+            <div>
+
+            </div>
+
+            <div>
+                <h3>Rolled Stat</h3>
+            </div>
+
+            <div>
+                <h3>Bonus</h3>
+            </div>
+
             <!--START STRENGTH STAT-->
             <div class="flex justify-between ml-2 mb-2 stat-button ">
                 <h3 class="strength">Strength</h3>
@@ -146,7 +170,7 @@
 
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
-                <input type="number" name="str" id="str">
+                <p id="str"></p>
                 {{!-- <p id="str">this is where your bonuses go</p> --}}
             </div>
             <!--END STRENGTH STAT-->
@@ -170,7 +194,7 @@
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="dex">this is where your bonuses go</p> --}}
-                <input type="number" name="dex" id="dex">
+                <p id="dex"></p> 
             </div>
             <!--END DEXTERITY STAT-->
 
@@ -189,7 +213,7 @@
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="con">this is where your bonuses go</p> --}}
-                <input type="number" name="con" id="con">
+               <p id="con"></p> 
 
             </div>
             <!--END CONSTITUTION STAT-->
@@ -212,7 +236,7 @@
                 <!--THIS IS WHERE BONSUSES GO-->
 
                 {{!-- <p id="int">this is where your bonuses go</p> --}}
-                <input type="number" name="int" id="int">
+                <p id="int"></p> 
 
             </div>
             <!--END INTELLIGENCE STAT-->
@@ -236,7 +260,7 @@
                 <!--THIS IS WHERE BONSUSES GO-->
 
                 {{!-- <p id="wis">this is where your bonuses go</p> --}}
-                <input type="number" name="wis" id="wis">
+                <p id="wis"></p> 
             </div>
             <!--END WISDOM STAT-->
 
@@ -256,7 +280,7 @@
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
                 {{!-- <p id="cha">this is where your bonuses go</p> --}}
-                <input type="number" name="cha" id="cha">
+                <p id="cha"></p> 
             </div>
             <!--END CHARISMA STAT-->
 
@@ -272,14 +296,14 @@
     <!--------------------------------------------------------------------------------COLUMN #2-------------------------------------------------------------------------------->
     <!--BEGINNING DICE TRAY + CHARACTER IMAGE-->
     <article class="col-4">
-        <div>
+        {{!-- <div>
             <div class="row">
                 <!--Dice Pool-->
-                <div class="container justify-center mb-6 mr-2" style="background-image: url(/img/dice/dicetray_4.png)">
+                <div class="container justify-center mb-6 mr-2 h-24 min-h-full text-center" style="background-image: url(/img/dice/dicetray_4.png)">
                     <!--Draggable Dice go here-->
                     <div id="dice-tray" class="inline-flex object-center"></div>
                 </div>
-            </div>
+            </div> --}}
 
             <!--CHARACTER IMAGE INSERT-->
             <div flex-row>

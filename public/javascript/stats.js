@@ -80,22 +80,22 @@ const showModifier = function (event) {
     // get check which stat has been modified, then display modifier
     switch (this.id) {
         case "strength":
-            strModEl.value = mod;
+            strModEl.textContent = mod;
             break;
         case "dexterity":
-            dexModEl.value = mod;
+            dexModEl.textContent = mod;
             break;
         case "constitution":
-            conModEl.value = mod;
+            conModEl.textContent = mod;
             break;
         case "intelligence":
-            intModEl.value = mod;
+            intModEl.textContent = mod;
             break;
         case "wisdom":
-            wisModEl.value = mod;
+            wisModEl.textContent = mod;
             break;
         case "charisma":
-            chaModEl.value = mod;
+            chaModEl.textContent = mod;
             break;
     }
 }
