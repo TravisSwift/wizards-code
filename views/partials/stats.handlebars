@@ -268,21 +268,10 @@
     <!--------------------------------------------------------------------------------COLUMN #2-------------------------------------------------------------------------------->
     <!--BEGINNING DICE TRAY + CHARACTER IMAGE-->
     <article>
-        {{!-- <div>
-            <div class="row">
-                <!--Dice Pool-->
-                <div class="container justify-center mb-6 mr-2 h-24 min-h-full text-center"
-                    style="background-image: url(/img/dice/dicetray_4.png)">
-                    <!--Draggable Dice go here-->
-                </div>
-            </div> --}}
-
-            <!--CHARACTER IMAGE INSERT-->
-            <div flex-row>
-                <div class="hidden border-black border-2 mr-2 justify-center content-center lg:block mr-8 mt-10q">
-                    <img src="/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300"
-                        height="300">
-                </div>
+        <!--CHARACTER IMAGE INSERT-->
+        <div flex-row>
+            <div class="hidden border-black border-2 mr-2 justify-center content-center lg:block mr-8 mt-10q">
+                <img src="/img/characters_images/elf-5636466_1920.png" alt="Character Image" width="300" height="300">
             </div>
         </div>
     </article>
@@ -293,6 +282,6 @@
 
 </section>
 
-    {{#if loggedIn}}
-    {{> characters}}
-    {{/if}}
+{{#if loggedIn}}
+{{> characters}}
+{{/if}}
