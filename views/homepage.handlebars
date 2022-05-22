@@ -29,6 +29,13 @@
 </content>
 
 <!--CHARACTER CREATION STATS-->
-<div class="grid grid-cols-3">
-    <div class="col-span-3 lg:col-span-2">{{> stats}}</div>
+<div class="grid grid-cols-6 justify-items-center">
+    <div class="col-span-6 lg:col-span-5">{{> stats}}</div>
+
+    <div class="col-span-6 lg:col-span-1"> 
+        {{#if loggedIn}}
+        {{> characters}}
+        {{/if}}
+    </div>
+
 </div>
