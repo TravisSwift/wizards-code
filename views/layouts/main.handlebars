@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap">
-    <link rel="stylesheet" href="/css/DndStyles.css">
+    <link rel="stylesheet" href="../../public/css/DndStyles.css">
     <style>
         * {
             font-family: 'BIZ UDMincho', serif;
@@ -20,7 +20,7 @@
 
 
     <!-- CSS only -->
-    <link href="/css/DndStyles.css" rel="stylesheet">
+    <link href="../../public/css/DndStyles.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -31,16 +31,16 @@
     <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"></div>
     </div>
 
-    <!-- Width of 16 by default, 32 on medium screens, and 48 on large screens -->
-    <!--<img class="w-16 md:w-32 lg:w-48" src="...">-->
+  
+   
     <!--Title-->
     <header>
-        <h1 class="text-2xl ml-2 text-decoration-underline text-center">Dungeons and Dragons Character Generator</h1>
+        <h1 class="text-2xl ml-2 text-decoration-underline text-center justify-items-center">Dungeons and Dragons Character Generator</h1>
         <!--header end tag?--->
            <!--BEGINNING BANNER-->
     <section>
-        <div>
-            <img class="text-light border-2 border-black ml-20" src="/img/Banner.jpg" alt="traveler on a horse entering the castle gates">
+        <div class="flex justify-center">
+            <img class="text-light border-2 border-black" src="/img/Banner.jpg" alt="traveler on a horse entering the castle gates">
         </div>
 
         <!--How it works section/maybe some instructions-->
@@ -59,13 +59,9 @@
                 <a class="text-light">Learn More</a>
             </div> -->
 
-            <div class="row border border-danger rounded ml-2 mr-2 flex justify-center  text-3xl border-2 border-black gap-10">
+            <div class="flex place-content: space-around justify-end">
                 <div class="col-3 nav-buttons ml-2 mr-2">
-                    <a href="/learnmore" class="text-light">Learn More</a>
-                </div>
-
-                <div class="col-3 nav-buttons ml-2 mr-2">
-                    <a href="/" class="text-light">Character Sheet Generator</a>
+                    <a href="/" class="text-light"></a>
                 </div>
 
                 {{#if loggedIn}}
