@@ -7,12 +7,12 @@
         <div class="row border border-danger rounded ml-2 mr-2 mb-2 flex justify-center border-2 border-black  md:text-3xl">
             <div class="col-4 ml-10">
                 <div>
-                    <button class="content-between ml-10 mr-10">Roll Stats</button>
+                    <button class="content-between ml-10 mr-10" id="dice-btn">Roll Stats</button>
                 </div>
             </div>
             {{#if loggedIn}}
             <div class="col-4">
-                <button class="content-between ml-10 mr-10">Save Character</button>
+                <button class="content-between ml-10 mr-10" id="save-character">Save Character</button>
             </div>
 
             <div class="col-4">
@@ -37,14 +37,14 @@
         <!--------------------------------------------------------------------------------INPUT STATS-------------------------------------------------------------------------------->
         <section class="grid grid-cols-2 gap-4">
             <!--EnterCharacter Name-->
-            <div class="col-4 ml-2 flex space-x-4">
-                <label class="text-light ">Character Name</label><input type="text" name="character-name">
+            <div class="col-4 ml-2 flex space-x-4 ml-4">
+                <label class="text-light ">Character Name</label><input type="text" name="character-name" id="name">
             </div>
 
             <!--START CLASS-->
             <div class="col-4 ml-2 mb-2 mt-2 flex  justify-between">
                 <label class="text-light ">Primary Class</label>
-                <select name="Primary Class">
+                <select name="Primary Class" id="class">
                     <option value="Warrior">Barbarian</option>
                     <option value="Bard">Bard</option>
                     <option value="Cleric">Cleric</option>
@@ -70,7 +70,7 @@
                         <label class="text-light">Level</label>
                     </div>
                     <div class="col-8">
-                        <input type="number" name="Hit Points" min="0">
+                        <input type="number" name="Level" min="0" id="level">
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                         <label class="text-light">Hit Points</label>
                     </div>
                     <div class="col-8">
-                        <input type="number" name="Hit Points" min="0">
+                        <input type="number" name="Hit Points" min="0" id="hit-points">
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
             <!--START RACE-->
             <div class="col-4 ml-2 mb-2 mt-2 flex justify-between">
                 <label class="text-light ">Select Race</label>
-                <select name="Race">
+                <select name="Race" id="race">
                     <option value="none" selected disabled hidden>Choose</option>
                     <option value="Dragonborn">Dragonborn</option>
                     <option value="Dwarf">Dwarf</option>
@@ -121,7 +121,7 @@
             <!--START ARMOR CLASS-->
             <div class="col-4 flex justify-between ml-2 mt-2 mb-2">
                 <label class="text-light">Armor Class</label>
-                <input type="number" name="Hit Points" min="0">
+                <input type="number" name="Armor-Class" min="0" id="armor-class">
             </div>
             <!--END ARMOR CLASS-->
         </section>
@@ -138,50 +138,18 @@
                 <h3 class="strength">Strength</h3>
             </div>
 
-            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
-                <!--THIS IS WHERE BONSUSES GO-->
-                <p>Bonus</p>
-            </div>
-
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
-                <p>Drag Dice</p>
+                {{!-- <p id="strength">this is where your dice go</p> --}}
+                <input type="number" name="strength" id="strength">
+            </div>
+
+            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                <!--THIS IS WHERE BONSUSES GO-->
+                <input type="number" name="str" id="str">
+                {{!-- <p id="str">this is where your bonuses go</p> --}}
             </div>
             <!--END STRENGTH STAT-->
-
-
-            <!--START INTELLIGENCE STAT-->
-            <div class="flex justify-between ml-2 mb-2 stat-button ">
-                <h3 class="intelligence">Intelligence</h3>
-            </div>
-
-            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
-                <!--THIS IS WHERE BONSUSES GO-->
-                <p>Bonus</p>
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                <p>Drag Dice</p>
-            </div>
-            <!--END INTELLIGENCE STAT-->
-
-
-            <!--START WISDOM STAT-->
-            <div class="flex justify-between ml-2 mb-2 stat-button ">
-                <h3 class="wisdom">Wisdom</h3>
-            </div>
-
-            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
-                <!--THIS IS WHERE BONSUSES GO-->
-                <p>Bonus</p>
-            </div>
-
-            <!--DICE INSERT-->
-            <div class="container border border-danger rounded stat-button">
-                <p>Drag Dice</p>
-            </div>
-            <!--END WISDOM STAT-->
 
 
             <!--START DEXTERITY STAT-->
@@ -189,14 +157,16 @@
                 <h3 class="dexterity">Dexterity</h3>
             </div>
 
-            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
-                <!--THIS IS WHERE BONSUSES GO-->
-                <p>Bonus</p>
-            </div>
-
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
-                <p>Drag Dice</p>
+                {{!-- <p id="dexterity">this is where your dice go</p> --}}
+                <input type="number" name="dexterity" id="dexterity">
+            </div>
+
+            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                <!--THIS IS WHERE BONSUSES GO-->
+                {{!-- <p id="dex">this is where your bonuses go</p> --}}
+                <input type="number" name="dex" id="dex">
             </div>
             <!--END DEXTERITY STAT-->
 
@@ -206,16 +176,58 @@
                 <h3 class="constitution">Constitution</h3>
             </div>
 
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                {{!-- <p id="constitution" class="stat">this is where your dice go</p> --}}
+                <input type="number" name="constitution" id="constitution">
+            </div>
+
             <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
                 <!--THIS IS WHERE BONSUSES GO-->
-                <p>Bonus</p>
+                {{!-- <p id="con">this is where your bonuses go</p> --}}
+                <input type="number" name="con" id="con">
+            </div>
+            <!--END CONSTITUTION STAT-->
+
+
+            <!--START INTELLIGENCE STAT-->
+            <div class="flex justify-between ml-2 mb-2 stat-button ">
+                <h3 class="intelligence">Intelligence</h3>
             </div>
 
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
-                <p>Drag Dice</p>
+                {{!-- <p id="intelligence" class="stat">this is where your dice go</p> --}}
+                <input type="number" name="intelligence" id="intelligence">
+
             </div>
-            <!--END CONSTITUTION STAT-->
+
+            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                <!--THIS IS WHERE BONSUSES GO-->
+                {{!-- <p id="int">this is where your bonuses go</p> --}}
+                <input type="number" name="int" id="int">
+            </div>
+            <!--END INTELLIGENCE STAT-->
+
+
+            <!--START WISDOM STAT-->
+            <div class="flex justify-between ml-2 mb-2 stat-button ">
+                <h3 class="wisdom">Wisdom</h3>
+            </div>
+
+            <!--DICE INSERT-->
+            <div class="container border border-danger rounded stat-button">
+                {{!-- <p id="wisdom" class="stat">this is where your dice go</p> --}}
+                <input type="number" name="wisdom" id="wisdom">
+
+            </div>
+
+            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                <!--THIS IS WHERE BONSUSES GO-->
+                {{!-- <p id="wis">this is where your bonuses go</p> --}}
+                <input type="number" name="wis" id="wis">
+            </div>
+            <!--END WISDOM STAT-->
 
 
             <!--START CHARISMA STAT-->
@@ -223,14 +235,16 @@
                 <h3 class="charisma">Charisma</h3>
             </div>
 
-            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
-                <!--THIS IS WHERE BONSUSES GO-->
-                <p>Bonus</p>
-            </div>
-
             <!--DICE INSERT-->
             <div class="container border border-danger rounded stat-button">
-                <p>Drag Dice</p>
+                {{!-- <p id="charisma" class="stat">this is where your dice go</p> --}}
+                <input type="number" name="charisma" id="charisma">
+            </div>
+
+            <div class="flex justify-between  border border-danger border-solid rounded stat-button ">
+                <!--THIS IS WHERE BONSUSES GO-->
+                {{!-- <p id="cha">this is where your bonuses go</p> --}}
+                <input type="number" name="cha" id="cha">
             </div>
             <!--END CHARISMA STAT-->
 
@@ -249,9 +263,9 @@
         <div>
             <div class="row">
                 <!--Dice Pool-->
-                <div class="container justify-center mb-6 mr-2"><img
-                        src="/img/dice/dicetray_4.png" alt="Dice Tray">
+                <div class="container justify-center mb-6 mr-2" style="background-image: url(/img/dice/dicetray_4.png)">
                     <!--Draggable Dice go here-->
+                    <div id="dice-tray" class="inline-flex object-center"></div>
                 </div>
             </div>
 
@@ -265,3 +279,6 @@
         </div>
     </article>
     <!--END DICE TRAY + CHARACTER IMAGE-->
+    <script src="/javascript/stats.js"></script>
+    <script src="/javascript/draggable.js"></script>
+    <script src="/javascript/save.js"></script>

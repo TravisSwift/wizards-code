@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap">
-    <link rel="stylesheet" href="../../public/css/DndStyles.css">
+    <link rel="stylesheet" href="/css/DndStyles.css">
     <style>
         * {
             font-family: 'BIZ UDMincho', serif;
@@ -20,7 +20,7 @@
 
 
     <!-- CSS only -->
-    <link href="../../public/css/DndStyles.css" rel="stylesheet">
+    <link href="/css/DndStyles.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -35,8 +35,21 @@
    
     <!--Title-->
     <header>
-        <h1 class="text-light text-2xl ml-2 text-decoration-underline">Dungeons and Dragons Character Generator</h1>
+        <h1 class="text-2xl ml-2 text-decoration-underline text-center">Dungeons and Dragons Character Generator</h1>
         <!--header end tag?--->
+           <!--BEGINNING BANNER-->
+    <section>
+        <div>
+            <img class="text-light border-2 border-black ml-20" src="/img/Banner.jpg" alt="traveler on a horse entering the castle gates">
+        </div>
+
+        <!--How it works section/maybe some instructions-->
+        {{!-- <div>
+            <h2 class="text-light ml-2">Learn More</h2>
+            <p class="text-light text-black-600 border border-danger rounded ml-2">Welcome to our Dungeons and Dragons Character Generator. </p>
+        </div> --}}
+    </section>
+    <!--END BANNER-->
 
         <!--Navigation Bar-->
         <nav>
@@ -46,7 +59,11 @@
                 <a class="text-light">Learn More</a>
             </div> -->
 
-            <div class="flex place-content: space-around justify-end">
+            <div class="row border border-danger rounded ml-2 mr-2 flex justify-center  text-3xl border-2 border-black gap-10">
+                <div class="col-3 nav-buttons ml-2 mr-2">
+                    <a href="/learnmore" class="text-light">Learn More</a>
+                </div>
+
                 <div class="col-3 nav-buttons ml-2 mr-2">
                     <a href="/" class="text-light"></a>
                 </div>
@@ -54,26 +71,13 @@
                 {{#if loggedIn}}
                 <button id="logout" class="btn-no-style">Logout</button>
                 {{else}}
-                <div class="col-3 nav-buttons text-lg ml-2 mr-5">
-                    <a href="/login" class="text-light">Sign Up/Login</a>
+                <div class="col-3 nav-buttons ml-2 mr-2">
+                    <a href="/login" class="text-light">Login</a>
                 </div>
                 {{/if}}
             </div>
         </nav>
     </header>
-        <!--BEGINNING BANNER-->
-    <section>
-        <div  class="flex block justify-center">
-            <img class="mb-2 space-y-2 md:w-1/2" src="/img/Banner.jpg" alt="traveler on a horse entering the castle gates">
-        </div>
-
-        <!--How it works section/maybe some instructions-->
-        <div>
-            <h2 class="text-light ml-2">Learn More</h2>
-            <p class="text-light text-black-600 border border-danger rounded ml-2">Welcome to our Dungeons and Dragons Character Generator. </p>
-        </div>
-    </section>
-    <!--END BANNER-->
 
     <main>
         {{{ body }}}
@@ -89,7 +93,7 @@
         <p><strong>Dungeons & Dragons Character Generator</strong> by <a
                 href="https://travisswift.github.io/portfolio/">Travis Swift</a>, <a
                 href="https://sacylkowski.github.io/my-portfolio/">Sarah Cylkowski</a>, <a href="">Alexander Lu</a>,
-            <a href="">Erik Rockenmeyer</a>, and <a href="">Stephen Fike</a>.
+            <a href="https://erockenmeyer.github.io/Portfolio/">Erik Rockenmeyer</a>, and <a href="">Stephen Fike</a>.
         </p>
     </footer>
     <!--END FOOTER-->
