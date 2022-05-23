@@ -29,46 +29,36 @@
 
 <body class="bg-neutral-400/[.6]">
     <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"></div>
-    </div>
-
-  
-   
     <!--Title-->
     <header>
-        <h1 class="text-2xl ml-2 text-decoration-underline text-center justify-items-center">Dungeons and Dragons Character Generator</h1>
+        <h1 class="text-2xl ml-2 text-decoration-underline text-center justify-items-center">Dungeons and Dragons
+            Character Generator</h1>
         <!--header end tag?--->
-           <!--BEGINNING BANNER-->
-    <section>
-        <div class="flex justify-center">
-            <img class="text-light border-2 border-black" src="/img/Banner.jpg" alt="traveler on a horse entering the castle gates">
-        </div>
-
-        <!--How it works section/maybe some instructions-->
-        {{!-- <div>
-            <h2 class="text-light ml-2">Learn More</h2>
-            <p class="text-light text-black-600 border border-danger rounded ml-2">Welcome to our Dungeons and Dragons Character Generator. </p>
-        </div> --}}
-    </section>
-    <!--END BANNER-->
+        <!--BEGINNING BANNER-->
+        <section>
+            <div class="flex justify-center">
+                <img class="text-light border-2 border-black" src="/img/Banner.jpg"
+                    alt="traveler on a horse entering the castle gates">
+            </div>
+        </section>
+        <!--END BANNER-->
 
         <!--Navigation Bar-->
         <nav>
-
-            <!--<div class="flex place-content: space-between;">
-            <div class="col-3 nav-buttons ml-4 mr-2">
-                <a class="text-light">Learn More</a>
-            </div> -->
-
-            <div class="flex place-content: space-around justify-end">
+            <div class="row border border-danger rounded ml-2 mr-2 flex justify-center  text-3xl border-2 border-black gap-10">
                 <div class="col-3 nav-buttons ml-2 mr-2">
-                    <a href="/" class="text-light"></a>
+                    <a href="/learnmore" class="text-light">Learn More</a>
+                </div>
+
+                <div class="col-3 nav-buttons ml-2 mr-2">
+                    <a href="/" class="text-light">Character Sheet Generator</a>
                 </div>
 
                 {{#if loggedIn}}
                 <button id="logout" class="btn-no-style">Logout</button>
                 {{else}}
-                <div class="col-3 nav-buttons text-lg ml-2 mr-5">
-                    <a href="/login" class="text-light">Sign Up/Login</a>
+                <div class="col-3 nav-buttons ml-2 mr-2">
+                    <a href="/login" class="text-light">Login</a>
                 </div>
                 {{/if}}
             </div>
