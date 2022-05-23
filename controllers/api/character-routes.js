@@ -3,9 +3,9 @@ const { User, Character } = require("../../models");
 
 router.get("/", (req, res) => {
     Character.findAll({
-        attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha", 
-        // "proficiency", "str_save", "dex_save", "con_save", "int_save", "wis_save", "cha_save", "acrobatics", "animal_handling", "arcana", "athletics", "deception", "history", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "persuasion", "religion", "sleight_of_hand", "stealth", "survival", "passive_perception", "armor_class", "initiative", "speed", "hit_points", "hit_dice", "languages"
-    ],
+        attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"
+            // "race", "hit_points", "level", "armor_class", "proficiency", "str_save", "dex_save", "con_save", "int_save", "wis_save", "cha_save", "acrobatics", "animal_handling", "arcana", "athletics", "deception", "history", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "persuasion", "religion", "sleight_of_hand", "stealth", "survival", "passive_perception", "initiative", "speed", "hit_dice", "languages"
+            ],
         include: [
             {
                 model: User,
@@ -26,8 +26,8 @@ router.get("/:id", (req, res) => {
             id: req.params.id
         },
         attributes: ["id", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "class", "name", "str", "dex", "con", "int", "wis", "cha"
-        // , "proficiency", "str_save", "dex_save", "con_save", "int_save", "wis_save", "cha_save", "acrobatics", "animal_handling", "arcana", "athletics", "deception", "history", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "persuasion", "religion", "sleight_of_hand", "stealth", "survival", "passive_perception", "armor_class", "initiative", "speed", "hit_points", "hit_dice", "languages"
-    ],
+        // "race", "hit_points", "level", "armor_class", "proficiency", "str_save", "dex_save", "con_save", "int_save", "wis_save", "cha_save", "acrobatics", "animal_handling", "arcana", "athletics", "deception", "history", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "persuasion", "religion", "sleight_of_hand", "stealth", "survival", "passive_perception", "initiative", "speed", "hit_dice", "languages"
+        ],
         include: [
             {
                 model: User,
@@ -65,6 +65,10 @@ router.post("/", (req, res) => {
         int: req.body.int,
         wis: req.body.wis,
         cha: req.body.cha,
+        // race: req.body.race,
+        // hit_points: req.body.hit_points,
+        // level: req.body.level,
+        // armor_class: req.body.armor_class
         // proficiency: req.body.proficiency,
         // str_save: req.body.str_save,
         // dex_save: req.body.dex_save,
@@ -121,6 +125,10 @@ router.put("/:id", (req, res) => {
             int: req.body.int,
             wis: req.body.wis,
             cha: req.body.cha,
+            // race: req.body.race,
+            // hit_points: req.body.hit_points,
+            // level: req.body.level,
+            // armor_class: req.body.armor_class
             // proficiency: req.body.proficiency,
             // str_save: req.body.str_save,
             // dex_save: req.body.dex_save,

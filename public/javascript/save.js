@@ -36,7 +36,7 @@ const saveFetch = (character) => {
         }
     });
 
-    if (response.ok) {
+    if (response) {
         // reload page
         document.location.reload();
     } else {
