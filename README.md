@@ -28,18 +28,18 @@
 
 
 ## Technologies Used
--   bcrypt
-    dotenv
-    express
-    express-handlebars
-    express-session
-    foundation-cli
-    Javascript
-    jest
-    mysql2
-    node-fetch
-    sequelize
-    tailwindcss
+-   * bcrypt
+    * dotenv
+    * express
+    *  express-handlebars
+    * express-session
+    * foundation-cli
+    * Javascript
+    * jest
+    * mysql2
+    * node-fetch
+    * sequelize
+    * tailwindcss
     
     
 
