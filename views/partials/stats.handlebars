@@ -15,7 +15,7 @@
             <!--START CLASS-->
             <div class="col-4 ml-2 mb-2 mt-2 flex  justify-between">
                 <label class="text-light ">Primary Class</label>
-                <select name="Primary Class">
+                <select name="Primary Class" id="class">
                     <option value="Warrior">Barbarian</option>
                     <option value="Bard">Bard</option>
                     <option value="Cleric">Cleric</option>
@@ -41,7 +41,7 @@
                         <label class="text-light">Level</label>
                     </div>
                     <div class="col-8">
-                        <input type="number" name="Hit Points" min="0">
+                        <input type="number" name="Hit Points" min="0" id="level">
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                         <label class="text-light">Hit Points</label>
                     </div>
                     <div class="col-8">
-                        <input type="number" name="Hit Points" min="0">
+                        <input type="number" name="Hit Points" min="0" id="hit-points">
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
             <!--START RACE-->
             <div class="col-4 ml-2 mb-2 mt-2 flex justify-between">
                 <label class="text-light ">Select Race</label>
-                <select name="Race">
+                <select name="Race" id="race">
                     <option value="none" selected disabled hidden>Choose</option>
                     <option value="Dragonborn">Dragonborn</option>
                     <option value="Dwarf">Dwarf</option>
